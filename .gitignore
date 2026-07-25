@@ -1,0 +1,141 @@
+# =============================================================================
+# FIFA World Cup 2026 Predictor — .gitignore
+# Keeps source code and small configs; excludes envs, secrets, and raw data.
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+nosetests.xml
+
+# --- Jupyter / IPython ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+.virtual_documents/
+
+# --- Conda / Anaconda / virtual environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+.condarc.local
+conda-meta/
+*.conda
+anaconda_projects/
+.anaconda/
+
+# Common local env names (never commit full env trees)
+deeplearning/
+base/
+
+# --- Secrets & credentials ---
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+.token
+*.secret
+
+# --- OS & editor ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Raw & external datasets (large / third-party; re-download locally) ---
+# Kaggle international results bundle
+general/Kaggle_martj42international-football-results-from-1872-to-2017/
+
+# Raw historical match archives
+data/raw_historical*
+data/results.csv
+data/shootouts.csv
+data/former_names.csv
+
+# Squad market-value scrapes (regenerate via scripts)
+data/squad/*.csv
+
+# DataCamp submission copies (optional local exports)
+datacamp/
+
+# --- Generated artifacts (reproducible from scripts) ---
+# PyTorch checkpoints — regenerate via run_backtest.py / run_production.py
+saved_models/*.pt
+
+# Pipeline CSV outputs — regenerate via runners
+outputs/*.csv
+
+# CatBoost / ML experiment logs
+catboost_info/
+
+# Streamlit / local caches
+.streamlit/secrets.toml
+
+# --- Archives & scratch ---
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+_t.txt
+Untitled.ipynb
+
+# --- Optional: keep HTML/PDF reports in repo; uncomment to exclude ---
+# Executive_Report.html
+# Methodology_Handout.pdf
+# fifa2026_web_deploy.zip

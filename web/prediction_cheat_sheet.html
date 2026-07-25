@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA 2026 Prediction Cheat Sheet</title>
+  <link rel="stylesheet" href="cheat_sheet.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>FIFA World Cup 2026 — Prediction Cheat Sheet</h1>
+    <p class="subtitle">Pick group finishers (A–L) and knockout winners · optional goals · print-friendly</p>
+  </header>
+
+  <section class="how-to no-print" aria-label="How to use">
+    <h2 class="how-to-title">How to use</h2>
+    <ol class="how-to-steps">
+      <li><strong>Head-to-head:</strong> type a few letters (e.g. <em>Mex</em>) under Team 1 &amp; Team 2, pick from the list, then <strong>Predict</strong>.</li>
+      <li><strong>Groups &amp; knockout:</strong> type to search or tap the list — every team box is editable.</li>
+      <li><strong>Group stage:</strong> each group has <strong>4 teams</strong> — pick 1st, 2nd, and Best 3rd; the <strong>4th team</strong> is shown on each card (updates as you type).</li>
+      <li>Optional: <strong>Load model picks</strong> pre-fills groups from the model — you can still edit every name after.</li>
+      <li>Optional: <strong>Show tournament odds</strong> opens the model’s QF / SF / Final / Win probabilities while you fill in groups.</li>
+      <li>Your picks auto-save on this device.</li>
+      <li><strong>Schedule:</strong> venue time is stadium local; pick your timezone (or use auto) for <strong>Your time</strong>.</li>
+    </ol>
+  </section>
+
+  <section class="controls no-print">
+    <div class="control-row">
+      <button type="button" id="btn-load-model">Load model picks</button>
+      <button type="button" id="btn-load-stage-notes" title="Monte Carlo probabilities to reach each knockout round and win the title">Show tournament odds</button>
+      <button type="button" id="btn-clear">Clear saved picks</button>
+      <label class="toggle">
+        <input type="checkbox" id="print-blank">
+        Print blank sheet
+      </label>
+    </div>
+  </section>
+
+  <section class="match-prediction no-print">
+    <h2>Head-to-head prediction</h2>
+    <p class="section-hint">Start typing a team name — suggestions appear as you type (e.g. <em>Mex</em> → Mexico).</p>
+    <div class="calc-row">
+      <label>
+        Team 1
+        <input type="text" id="team-1" class="team-picker" list="teams-list-all" placeholder="Type to search…" autocomplete="off" spellcheck="false">
+      </label>
+      <label>
+        Team 2
+        <input type="text" id="team-2" class="team-picker" list="teams-list-all" placeholder="Type to search…" autocomplete="off" spellcheck="false">
+      </label>
+      <button type="button" id="btn-predict">Predict</button>
+    </div>
+    <div id="calc-results" class="calc-results" aria-live="polite"></div>
+  </section>
+
+  <aside id="stage-sidebar" class="stage-sidebar no-print hidden">
+    <h2>Model stage probabilities</h2>
+    <div id="stage-notes"></div>
+  </aside>
+
+  <main>
+    <section class="groups-section">
+      <h2>Group stage (A–L)</h2>
+      <p class="section-hint">Each group has <strong>4 teams</strong> (listed on every card). Enter your 1st, 2nd, and Best 3rd — the remaining name is your <strong>4th place</strong>. <strong>For</strong> / <strong>Against</strong> = optional goals (max 99).</p>
+      <div id="groups-grid" class="groups-grid"></div>
+    </section>
+
+    <section class="knockout-section">
+      <h2>Knockout bracket</h2>
+      <p class="section-hint">Type to search (e.g. <em>Bra</em>) or pick from the list for each side.</p>
+      <div class="knockout-grid">
+        <div class="round" id="round-r32">
+          <h3>Round of 32</h3>
+          <div class="slots" data-round="r32" data-count="16"></div>
+        </div>
+        <div class="round" id="round-qf">
+          <h3>Quarter-finals</h3>
+          <div class="slots" data-round="qf" data-count="8"></div>
+        </div>
+        <div class="round" id="round-sf">
+          <h3>Semi-finals</h3>
+          <div class="slots" data-round="sf" data-count="4"></div>
+        </div>
+        <div class="round" id="round-final">
+          <h3>Final</h3>
+          <div class="slots" data-round="final" data-count="1"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule-section">
+      <h2>2026 World Cup schedule</h2>
+      <p class="section-hint">
+        <strong>Venue time</strong> = kickoff at the stadium city.
+        <strong>Your time</strong> uses the timezone below (defaults to your device).
+      </p>
+      <div class="schedule-controls no-print">
+        <label>
+          Show times for
+          <select id="viewer-timezone">
+            <option value="auto">My device (auto)</option>
+            <option value="America/New_York">US Eastern (New York)</option>
+            <option value="America/Chicago">US Central (Chicago)</option>
+            <option value="America/Denver">US Mountain (Denver)</option>
+            <option value="America/Los_Angeles">US Pacific (Los Angeles)</option>
+            <option value="America/Toronto">Canada Eastern (Toronto)</option>
+            <option value="America/Vancouver">Canada Pacific (Vancouver)</option>
+            <option value="America/Mexico_City">Mexico (Mexico City)</option>
+            <option value="Europe/London">UK (London)</option>
+            <option value="Europe/Paris">Central Europe (Paris)</option>
+            <option value="Europe/Berlin">Central Europe (Berlin)</option>
+            <option value="Asia/Dubai">Gulf (Dubai)</option>
+            <option value="Asia/Kolkata">India (IST)</option>
+            <option value="Asia/Tokyo">Japan (Tokyo)</option>
+            <option value="Asia/Seoul">Korea (Seoul)</option>
+            <option value="Australia/Sydney">Australia (Sydney)</option>
+            <option value="Pacific/Auckland">New Zealand (Auckland)</option>
+          </select>
+        </label>
+        <span id="viewer-tz-label" class="schedule-tz-note"></span>
+      </div>
+      <div id="schedule-table" class="schedule-table-wrap" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <span id="last-updated">Loading bundle…</span>
+    <span class="footer-links"><a href="for_friends.html">For friends — what is this?</a></span>
+    <span class="author-credit">Chandra Sekhar</span>
+  </footer>
+
+  <script src="cheat_sheet.js"></script>
+</body>
+</html>

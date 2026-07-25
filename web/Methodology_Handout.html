@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FIFA 2026 Predictor — Training Data & Methodology</title>
+  <style>
+    :root {
+      --ink: #1a1a2e;
+      --muted: #4a5568;
+      --accent: #0f4c5c;
+      --gold: #bc6c25;
+      --bg: #faf9f7;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      margin: 0;
+      line-height: 1.5;
+    }
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 36px;
+      background: var(--card);
+    }
+    @media print {
+      body { background: white; }
+      .page { padding: 20px; max-width: 100%; }
+      .no-print { display: none; }
+    }
+    h1 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin: 0 0 6px;
+      color: var(--accent);
+    }
+    .subtitle { color: var(--muted); font-size: 0.95rem; margin-bottom: 24px; }
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 4px;
+      margin: 28px 0 12px;
+    }
+    .exec-box {
+      background: #f0f7f9;
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      margin: 10px 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 7px 9px;
+      text-align: left;
+    }
+    th { background: #edf2f7; font-weight: 600; }
+    tr:nth-child(even) { background: #f8fafc; }
+    ul { margin: 8px 0; padding-left: 1.2rem; }
+    li { margin: 4px 0; font-size: 0.9rem; }
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 12px 0;
+    }
+    .compare div {
+      border: 1px solid var(--border);
+      padding: 12px;
+      font-size: 0.85rem;
+    }
+    .compare h3 {
+      margin: 0 0 8px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .footnote {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 28px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    .no-print {
+      background: #fff8e6;
+      border: 1px solid #f0d78c;
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <p class="no-print">Tip: Chrome/Edge → <strong>Ctrl+P</strong> → Save as PDF</p>
+    <h1>FIFA World Cup 2026 Predictor</h1>
+    <p class="subtitle">Academic methodology brief — training data &amp; methods (for methodological review)<br/>
+    Author: Chandra Sekhar · Model: Iteration 7 · Generated June 14, 2026</p>
+
+    <div class="exec-box">
+      <strong>Summary.</strong> We train on <em>international A-team matches only</em> (country vs country),
+      using a <strong>5-year rolling window</strong> before each World Cup cutoff. Recent matches are
+      <strong>upweighted</strong> (2-year half-life decay), not excluded. The model does <strong>not</strong>
+      use club football (Premier League, Champions League, etc.).
+    </div>
+
+    <h2>Data sources</h2>
+    <ul>
+      <li><strong>Historical training:</strong> Kaggle martj42 international results (<code>results.csv</code>) — A-team match outcomes from 1872 onward.</li>
+      <li><strong>2026 fixtures:</strong> FIFA.com official schedule/PDF (<code>2026_FIFA_World_Cup_Schedule.csv.csv</code> locally), with playoff slots resolved from UEFA/FIFA playoff results.</li>
+      <li><strong>DataCamp files:</strong> used only for competition <em>submission format</em> (match_id alignment, output schema, placeholder team labels for grading) — not authoritative for kickoff times, qualification, or real-world truth.</li>
+      <li><strong>Secondary checks (optional):</strong> OpenFootball or TheStatsAPI as machine-readable cross-checks against the FIFA schedule.</li>
+    </ul>
+
+    <h2>What matches are included?</h2>
+    <p style="font-size:0.9rem;margin-top:0;">
+      Training rows come from the Kaggle martj42 dataset above, extended through 2026.
+      Teams are <strong>nations</strong> (France, England, Brazil) — never clubs.
+    </p>
+    <ul>
+      <li><strong>Included:</strong> World Cup &amp; continental qualifiers, continental finals (Euro, Copa, AFCON, Asian Cup),
+          Nations League, Gold Cup, friendlies, and regional A-team cups — all confederations (UEFA, CONMEBOL, CAF, AFC, CONCACAF, OFC).</li>
+      <li><strong>Excluded:</strong> Domestic leagues, UEFA Champions League/Europa League, any club match; matches on/after the forecast cutoff; matches older than 5 years.</li>
+      <li><strong>Validation:</strong> Walk-forward — tune on 2018 World Cup (cutoff opening day), confirm on 2022; 64 finals matches held out per year for Brier scoring.</li>
+    </ul>
+
+    <h2>Training windows (verified counts)</h2>
+    <table>
+      <tr><th>Run</th><th>Cutoff</th><th>Matches</th><th>From</th><th>To</th></tr>
+      <tr><td>2018 development</td><td>2018-06-14</td><td>4,617</td><td>2013-06-15</td><td>2018-06-12</td></tr>
+<tr><td>2022 confirmation</td><td>2022-11-20</td><td>4,473</td><td>2017-11-22</td><td>2022-11-19</td></tr>
+<tr><td>2026 production</td><td>2026-06-11</td><td>5,239</td><td>2021-06-12</td><td>2026-06-05</td></tr>
+    </table>
+    <p style="font-size:0.82rem;color:var(--muted);margin:6px 0 0;">
+      Each run uses only the last 1825 days (~5 years) with <code>date &lt; cutoff</code>.
+      The full archive spans 1872–2026 (~49k matches); training never uses the entire history.
+    </p>
+
+    <h2>Club vs national team — common clarification</h2>
+    <div class="compare">
+      <div>
+        <h3>Not in our data</h3>
+        PSG → France, Arsenal → England (club → nation mapping)<br/>
+        Premier League, Ligue 1, Champions League<br/>
+        Club form / domestic league progression
+      </div>
+      <div>
+        <h3>What we actually use</h3>
+        France vs Brazil, England vs Germany (A-team fixtures)<br/>
+        UEFA = <em>national-team</em> Euro, qualifiers, Nations League<br/>
+        Strength learned from weighted international results + Elo
+      </div>
+    </div>
+
+    <h2>How matches are weighted (Iteration 7)</h2>
+    <table>
+      <tr><th>Component</th><th>Setting</th><th>Meaning</th></tr>
+      <tr><td>Time decay</td><td>2-year half-life</td><td>Matches in the last 2 years get the highest weight; older matches within the 5-year window count less.</td></tr>
+      <tr><td>Tournament tier</td><td>A=1.00, B=0.85, C=0.50</td><td>WC/qualifiers/finals (A); Nations League, Gold Cup (B); friendlies (C).</td></tr>
+      <tr><td>Opponent difficulty</td><td>D<sub>opp</sub></td><td>Discounts goals vs weak opponents (walk-forward Elo).</td></tr>
+      <tr><td>Competition context</td><td>C<sub>conf</sub> (Opta-inspired)</td><td>FIFA 1.05, UEFA 1.00, CONMEBOL 0.95, CAF 0.88, AFC 0.80, CONCACAF 0.78 — discounts weaker competition <em>contexts</em>, not teams.</td></tr>
+    </table>
+    <p style="font-size:0.85rem;margin:8px 0 0;">
+      Final sample weight = time × tournament tier × D<sub>opp</sub> × C<sub>conf</sub>.
+      Model: Dixon-Coles Poisson with Elo anchor; neutral venues at World Cup inference.
+    </p>
+
+    <h2>Why Monte Carlo simulation?</h2>
+    <p style="font-size:0.9rem;margin-top:0;">
+      Dixon-Coles Poisson yields <strong>match-level</strong> score probabilities — not tournament-stage
+      outcomes directly. The 2026 format adds structural complexity: 12 groups of four, eight
+      best-third-place qualifiers assigned to predetermined knockout slots, and a 32-team bracket
+      where later opponents depend on earlier group results.
+    </p>
+    <ul>
+      <li><strong>Bracket dependencies:</strong> Knockout pairings follow group standings and best-third tiebreak rules; a closed-form tournament-winner probability is not available.</li>
+      <li><strong>Quantities estimated:</strong> P(win), P(reach semifinals), group advancement rates, and uncertainty in best-third qualification.</li>
+      <li><strong>Method:</strong> Many independent simulated tournaments (10,000 in production) sample match scores from the Poisson model, apply FIFA tiebreak rules, and aggregate stage outcomes.</li>
+    </ul>
+
+    <h2>Opta-inspired weights vs OPTA benchmark</h2>
+    <div class="compare">
+      <div>
+        <h3>Opta-inspired (in training)</h3>
+        C<sub>conf</sub> multipliers on each <em>match</em> by tournament confederation context.<br/>
+        Tuned on 2018 Brier. Does <strong>not</strong> import OPTA team ratings.
+      </div>
+      <div>
+        <h3>OPTA CSV (benchmark only)</h3>
+        Pre-tournament win % from OPTA used only for post-hoc comparison tables — never a training feature.
+      </div>
+    </div>
+
+    <h2>Backtest performance (Brier — lower is better)</h2>
+    <table>
+      <tr><th>Year</th><th>Iteration 7 Brier</th><th>Role</th></tr>
+      <tr><td>2018</td><td>0.739</td><td>Development / hyperparameter tuning</td></tr>
+      <tr><td>2022</td><td>0.726</td><td>Holdout confirmation</td></tr>
+    </table>
+
+    <h2>Iteration 8 (prototype)</h2>
+    <p style="font-size:0.9rem;margin-top:0;">
+      An exploratory branch blends Transfermarkt squad-value priors with walk-forward Elo before Poisson training.
+      Production forecasts remain on iteration 7; iteration 8 is retained for sensitivity analysis only.
+    </p>
+
+    <p class="footnote">
+      Project: fifa_2026_predictor · Training data: results.csv · Fixtures: FIFA official schedule ·
+      Live app: fifa2026-chandra.netlify.app ·
+      For full predictions see Executive_Report.html.
+    </p>
+  </div>
+</body>
+</html>

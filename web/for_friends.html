@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA 2026 Predictor — For friends</title>
+  <style>
+    :root {
+      --ink: #1a1a2e;
+      --muted: #4a5568;
+      --accent: #0f4c5c;
+      --gold: #bc6c25;
+      --bg: #faf9f7;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .exec-box {
+      background: #f0f7f9;
+      border-left: 4px solid var(--accent);
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+      border-radius: 0 8px 8px 0;
+    }
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+    .kpi {
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 0.85rem 0.5rem;
+      text-align: center;
+      border-radius: 8px;
+    }
+    .kpi .val { font-size: 1.25rem; font-weight: 700; color: var(--accent); }
+    .kpi .lbl {
+      font-size: 0.68rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 0.2rem;
+    }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 0.35rem;
+      margin: 0 0 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .card p { margin: 0 0 0.85rem; font-size: 0.95rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .steps {
+      margin: 0;
+      padding-left: 1.2rem;
+      font-size: 0.92rem;
+    }
+    .steps li { margin-bottom: 0.45rem; }
+    .links { display: flex; flex-direction: column; gap: 0.75rem; }
+    .btn {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 1.25rem;
+      border-radius: 8px;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      background: var(--card);
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .btn:hover { filter: brightness(0.96); }
+    .footer {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 2rem;
+    }
+    .footer a { color: var(--accent); }
+    @media (max-width: 480px) {
+      h1 { font-size: 1.35rem; }
+      .kpi-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>FIFA World Cup 2026 Predictor</h1>
+      <p class="tagline">Pick your bracket · read the model · works on your phone</p>
+    </header>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="val">48</div><div class="lbl">Teams</div></div>
+      <div class="kpi"><div class="val">104</div><div class="lbl">Matches</div></div>
+      <div class="kpi"><div class="val">iter 7</div><div class="lbl">Model</div></div>
+    </div>
+
+    <div class="exec-box">
+      Independent ML project by <strong>Chandra Sekhar</strong> — not FIFA or OPTA.
+      Walk-forward model tuned on 2018, checked on 2022, forecast for 2026.
+    </div>
+
+    <section class="card">
+      <h2>What to open</h2>
+      <p><strong>Prediction Cheat Sheet</strong> — fill groups A–L, knockout bracket, head-to-head odds, full schedule with your timezone. Picks save on your phone.</p>
+      <p><strong>Executive Report</strong> — methodology, flags, group picks, win probabilities. Best if you want the full story (Ctrl+P → PDF).</p>
+    </section>
+
+    <section class="card">
+      <h2>Quick start</h2>
+      <ol class="steps">
+        <li>Open the cheat sheet in Safari or Chrome — no app needed.</li>
+        <li>Optional: tap <strong>Load model picks</strong> for ML group predictions, then edit anything.</li>
+        <li>Bookmark the link — your bracket stays on that device only.</li>
+      </ol>
+    </section>
+
+    <nav class="links" aria-label="Main links">
+      <a class="btn btn-primary" href="prediction_cheat_sheet.html">Open Prediction Cheat Sheet</a>
+      <a class="btn" href="Executive_Report.html">Read Executive Report</a>
+      <a class="btn" href="index.html">Back to hub</a>
+    </nav>
+
+    <footer class="footer">
+      <p>Chandra Sekhar · fifa2026-chandra.netlify.app</p>
+    </footer>
+  </div>
+</body>
+</html>

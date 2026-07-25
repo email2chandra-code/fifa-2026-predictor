@@ -1,0 +1,46 @@
+Netlify Drop — quick test deploy (free)
+========================================
+
+1. Open in your browser:
+   https://app.netlify.com/drop
+
+2. Drag THIS ENTIRE FOLDER ("web") onto the page.
+   Do NOT drag individual files — drag the folder named "web".
+
+   Alternative: drag fifa2026_web_deploy.zip from the project root
+   (unzip is not needed — Netlify accepts the zip).
+
+3. Wait ~30 seconds. Netlify gives you a random URL, e.g.:
+   https://random-name-12345.netlify.app
+
+4. Open that URL on:
+   - Another laptop
+   - iPhone (Safari)
+   - Android (Chrome)
+
+5. Test:
+   - https://YOUR-SITE.netlify.app/ — small hub (cheat sheet, for friends, executive report)
+   - https://YOUR-SITE.netlify.app/for_friends.html — 3-paragraph guide for phone friends
+   - Cheat sheet loads (footer shows model iter + Chandra Sekhar)
+   - Executive_Report.html opens in browser
+   - Head-to-head calculator (e.g. Mexico vs South Africa)
+   - Load model picks / Show tournament odds
+   - Type in group fields — refresh page — picks should persist (that device only)
+
+Include in the "web" folder before deploy:
+   - for_friends.html, index.html, Executive_Report.html (copy from project root,
+     or run: python generate_executive_report.py --iteration 7)
+
+6. Optional: Netlify dashboard → Site settings → Change site name
+   → e.g. fifa2026-chandra → https://fifa2026-chandra.netlify.app
+
+Updating the live site later
+----------------------------
+Re-drag the same "web" folder (or zip) to Netlify Drop again, OR
+sign up free and connect GitHub later for one-click updates.
+
+Notes
+-----
+- Free tier is enough for friends testing.
+- Each person's entries save only on their own phone/browser (localStorage).
+- No Python or localhost needed for viewers.

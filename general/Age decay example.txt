@@ -1,0 +1,64 @@
+import numpy as np
+import pandas as pd
+
+# Let's say this is your scraped historical matches dataset
+historical_matches_raw = {
+    "date": ["2018-06-20", "2022-11-26", "2024-10-12", "2025-03-20"],
+    "home_team": ["Argentina", "Argentina", "Argentina", "Argentina"],
+    "away_team": ["Mexico", "Mexico", "Mexico", "Mexico"],
+    "home_goals": [2, 2, 3, 1],
+    "away_goals": [0, 0, 1, 1],
+    "match_type": ["World Cup", "World Cup", "Friendly", "WC Qualifier"],
+}
+df_history = pd.DataFrame(historical_matches_raw)
+df_history["date"] = pd.to_datetime(df_history["date"])
+
+# Target Target Date: Start of the 2026 World Cup
+TARGET_DATE = pd.to_datetime("2026-06-11")
+
+
+def calculate_decayed_h2h(history_df, target_team, opponent_team, evaluation_date):
+    # Filter for direct H2H matches
+    h2h = history_df[
+        ((history_df["home_team"] == target_team) & (history_df["away_team"] == opponent_team)) |
+        ((history_df["home_team"] == opponent_team) & (history_df["away_team"] == target_team))
+    ].copy()
+    
+    if h2h.empty:
+        return 0.5  # Neutral baseline if they have never played
+        
+    # Calculate match age in days relative to the 2026 tournament start
+    h2h["days_ago"] = (evaluation_date - h2h["date"]).dt.days
+    
+    # Apply 730-day (2-year) Half-Life Time Decay
+    half_life = 730
+    lam = np.log(2) / half_life
+    h2h["time_weight"] = np.exp(-lam * h2h["days_ago"])
+    
+    # Amplify the importance of competitive matches over Friendlies
+    # Assigning WC/Qualifiers a 1.5x weight multiplier
+    h2h["match_importance"] = h2h["match_type"].apply(
+        lambda x: 1.5 if x in ["World Cup", "WC Qualifier"] else 1.0
+    )
+    
+    # Combined final weight
+    h2h["final_weight"] = h2h["time_weight"] * h2h["match_importance"]
+    
+    # Calculate standard historical win ratio for target_team using weights
+    weighted_outcomes = []
+    for _, row in h2h.iterrows():
+        # Determine if target_team won, drew, or lost
+        if row["home_team"] == target_team:
+            outcome = 1.0 if row["home_goals"] > row["away_goals"] else (0.5 if row["home_goals"] == row["away_goals"] else 0.0)
+        else:
+            outcome = 1.0 if row["away_goals"] > row["home_goals"] else (0.5 if row["home_goals"] == row["away_goals"] else 0.0)
+            
+        weighted_outcomes.append(outcome * row["final_weight"])
+        
+    # Weighted Win Ratio = Sum of weighted outcomes / Sum of weights
+    weighted_h2h_ratio = sum(weighted_outcomes) / h2h["final_weight"].sum()
+    return weighted_h2h_ratio
+
+# Example: Calculate Argentina's weighted historical edge against Mexico heading into 2026
+arg_vs_mex_feature = calculate_decayed_h2h(df_history, "Argentina", "Mexico", TARGET_DATE)
+print(f"Time-Decayed Weighted H2H Ratio for Argentina vs Mexico: {arg_vs_mex_feature:.4f}")

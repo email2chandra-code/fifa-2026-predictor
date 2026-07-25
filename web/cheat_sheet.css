@@ -1,0 +1,666 @@
+:root {
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #5a6472;
+  --accent: #006633;
+  --border: #d8dee6;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --page-max: 1200px;
+  --page-pad-x: 1.5rem;
+  --team-name-chars: 28;
+  --team-field-width: calc(var(--team-name-chars) * 1ch + 1.75rem);
+  --score-col-width: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.page-header,
+.page-footer,
+.match-prediction,
+.controls,
+.stage-sidebar,
+.groups-section,
+.knockout-section,
+.schedule-section {
+  max-width: var(--page-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem var(--page-pad-x);
+}
+
+main {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.how-to {
+  max-width: var(--page-max);
+  margin: 0 auto 1rem;
+  padding: 0.85rem var(--page-pad-x);
+  background: #e8f5ee;
+  border: 1px solid #b8dcc8;
+  border-radius: 10px;
+}
+
+.how-to-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.how-to-steps {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.how-to-steps li {
+  margin-bottom: 0.35rem;
+}
+
+.dropdown-cue {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.controls .control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+}
+
+.match-prediction,
+.groups-section,
+.knockout-section,
+.schedule-section,
+.stage-sidebar {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
+.calc-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: end;
+}
+
+.calc-row label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.dropdown-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235a6472' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.55rem center;
+  padding-right: 1.75rem;
+  cursor: pointer;
+  border-color: #9ab0c4;
+  color: var(--text);
+}
+
+.dropdown-select:invalid,
+.dropdown-select option[value=""] {
+  color: var(--muted);
+}
+
+.team-picker {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235a6472' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.55rem center;
+  padding-right: 1.75rem;
+  cursor: text;
+  border-color: #9ab0c4;
+}
+
+.team-picker {
+  width: var(--team-field-width);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.group-field .team-picker {
+  padding: 0.35rem 1.5rem 0.35rem 0.5rem;
+  font-size: 0.82rem;
+}
+
+.ko-slot .team-picker {
+  font-size: 0.85rem;
+}
+
+.match-prediction .team-picker {
+  font-size: 0.95rem;
+}
+
+.section-hint {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.calc-results {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+.stage-sidebar.hidden {
+  display: none;
+}
+
+#stage-notes {
+  max-height: 320px;
+  overflow: auto;
+  font-size: 0.85rem;
+}
+
+.stage-note-row {
+  display: grid;
+  grid-template-columns: 1.6fr repeat(4, 0.65fr);
+  gap: 0.4rem;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.stage-team-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stage-team-group {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.group-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem 1rem 1rem;
+  background: #fafbfc;
+}
+
+.group-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+}
+
+.group-roster {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.group-fourth-line {
+  margin: 0 0 0.15rem;
+  font-size: 0.78rem;
+  color: var(--text);
+}
+
+.group-fourth {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.schedule-table-wrap {
+  overflow-x: auto;
+  max-height: 28rem;
+  overflow-y: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.schedule-table th {
+  position: sticky;
+  top: 0;
+  background: var(--card);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.schedule-table tbody tr:hover {
+  background: #f8fafb;
+}
+
+.schedule-sub {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.schedule-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.schedule-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.schedule-controls select {
+  min-width: 220px;
+}
+
+.schedule-tz-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.group-field {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr) var(--score-col-width) var(--score-col-width);
+  column-gap: 0.5rem;
+  row-gap: 0.25rem;
+  align-items: center;
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+}
+
+.group-card .team-picker {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.group-field label,
+.group-header span {
+  color: var(--muted);
+}
+
+.group-header {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.group-header .col-for,
+.group-header .col-against,
+.group-field .score-input {
+  justify-self: center;
+  width: var(--score-col-width);
+  text-align: center;
+}
+
+.group-field .score-input {
+  min-width: 0;
+  width: 2.75rem;
+  max-width: 2.75rem;
+  padding: 0.3rem 0.15rem;
+  font-size: 0.82rem;
+  -moz-appearance: textfield;
+}
+
+.group-field .score-input::-webkit-outer-spin-button,
+.group-field .score-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.knockout-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+  align-items: start;
+}
+
+.round {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.round h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.ko-slot {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+}
+
+.knockout-section .ko-slot .team-picker {
+  width: 100%;
+  min-width: 0;
+}
+
+.ko-slot .vs {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.page-footer {
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding-bottom: 2rem;
+}
+
+.author-credit {
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+  opacity: 0.85;
+}
+
+.friends-page .friends-main {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--page-pad-x) 2rem;
+}
+
+.friends-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1.25rem 1.5rem;
+}
+
+.friends-card p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.friends-card p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.friends-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.friends-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 8px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: #fff;
+}
+
+.friends-btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.friends-btn:hover,
+.friends-btn:focus-visible {
+  filter: brightness(0.95);
+}
+
+.footer-links {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--accent);
+}
+
+@media (min-width: 1100px) {
+  .groups-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .knockout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .page-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .groups-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .group-field {
+    grid-template-columns: 2rem minmax(0, 1fr) var(--score-col-width) var(--score-col-width);
+  }
+
+  .calc-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .calc-row select {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .stage-note-row {
+    grid-template-columns: 1fr repeat(4, 0.55fr);
+    font-size: 0.78rem;
+  }
+
+  .ko-slot .team-picker {
+    min-width: 0;
+    font-size: 0.85rem;
+  }
+}
+
+body.print-blank .model-value,
+body.print-blank .stage-sidebar,
+body.print-blank .match-prediction,
+body.print-blank .controls,
+body.print-blank .how-to {
+  display: none !important;
+}
+
+@media print {
+  body {
+    background: #fff;
+    font-size: 10pt;
+  }
+
+  .no-print,
+  .section-hint,
+  .model-value,
+  .schedule-controls {
+    display: none !important;
+  }
+
+  .page-header {
+    max-width: none;
+    padding: 0.25rem 0.5rem 0.35rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.15rem;
+    margin: 0;
+  }
+
+  .page-header .subtitle {
+    display: none;
+  }
+
+  .page-footer,
+  main {
+    max-width: none;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .groups-section,
+  .knockout-section,
+  .schedule-section {
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0.5rem;
+    padding: 0.35rem 0.5rem;
+    break-inside: auto;
+  }
+
+  .schedule-table-wrap {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .schedule-table {
+    font-size: 0.65rem;
+  }
+
+  .groups-section h2,
+  .knockout-section h2 {
+    font-size: 1rem;
+    margin: 0 0 0.35rem;
+  }
+
+  .groups-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.35rem;
+  }
+
+  .group-card {
+    box-shadow: none;
+    padding: 0.35rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .group-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .group-field {
+    font-size: 0.72rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .knockout-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .round h3 {
+    font-size: 0.85rem;
+  }
+
+  .ko-slot {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  input,
+  select {
+    border: none;
+    border-bottom: 1px solid #999;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .team-picker {
+    background-image: none;
+    padding-right: 0.25rem;
+  }
+}

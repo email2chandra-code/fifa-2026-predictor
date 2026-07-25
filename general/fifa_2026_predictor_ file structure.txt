@@ -1,0 +1,22 @@
+fifa_2026_predictor/
+│
+├── 01_data/
+│   ├── raw_historical_results.csv       # The ~45,000 match Kaggle download
+│   └── 2026_FIFA_World_Cup_Schedule.csv # The schedule CSV you uploaded here
+│
+├── 02_src/
+│   ├── __init__.py                      # Keeps the folder importable
+│   ├── features.py                      # Cleans data, adds time-decay & match weights
+│   ├── models.py                        # Your PyTorch Dixon-Coles neural layers
+│   └── simulator.py                     # High-performance NumPy Monte Carlo functions
+│
+├── 03_saved_models/
+│   ├── weights_2022_backtest.pt         # Saved model state after Phase 1 training
+│   └── weights_2026_production.pt       # Saved model state after rolling forward
+│
+├── 04_outputs/
+│   ├── backtest_2022_metrics.log        # Text file detailing Log Loss / Accuracy results
+│   └── final_2026_probabilities.csv     # Final output with simulated odds for each team
+│
+├── train.py                             # Master script to load parameters and run training epochs
+└── run_simulation.py                    # Master script to kick off the 100,000 bracket loops

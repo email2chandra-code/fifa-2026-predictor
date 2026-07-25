@@ -1,0 +1,5 @@
+# Pin these in conda env: deeplearning
+# PyTorch 2.2.2 requires numpy 1.x (NOT numpy 2.x)
+numpy==1.26.4
+pandas>=2.2,<2.4
+torch==2.2.2

@@ -1,0 +1,10 @@
+# Presentation notebook only (view CSVs — no PyTorch)
+# Use existing conda env: base
+#   conda activate base
+#   pip install -r requirements_presentation.txt
+# Jupyter: kernel Python 3 (ipykernel)
+
+numpy>=1.26,<2.1
+pandas>=2.2,<2.4
+jupyter
+ipykernel

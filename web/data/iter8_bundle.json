@@ -1,0 +1,2442 @@
+{
+  "metadata": {
+    "iteration": 8,
+    "cutoff": "2026-06-11",
+    "rho": -0.03,
+    "last_updated": "2026-06-14T10:39:54Z"
+  },
+  "teams": [
+    {
+      "id": 3,
+      "name": "Algeria",
+      "att": 0.61976,
+      "def": 0.4122205,
+      "elo": 1724.0221551496263
+    },
+    {
+      "id": 9,
+      "name": "Argentina",
+      "att": 0.7221773,
+      "def": 0.61303556,
+      "elo": 1757.8771991895908
+    },
+    {
+      "id": 12,
+      "name": "Australia",
+      "att": 0.54474795,
+      "def": 0.5984257,
+      "elo": 1639.8242839926754
+    },
+    {
+      "id": 13,
+      "name": "Austria",
+      "att": 0.45125902,
+      "def": 0.33998656,
+      "elo": 1636.3011137635556
+    },
+    {
+      "id": 22,
+      "name": "Belgium",
+      "att": 0.55940235,
+      "def": 0.36106524,
+      "elo": 1613.8011565309791
+    },
+    {
+      "id": 30,
+      "name": "Bosnia and Herzegovina",
+      "att": 0.01504085,
+      "def": -0.047205143,
+      "elo": 1480.1515718286992
+    },
+    {
+      "id": 32,
+      "name": "Brazil",
+      "att": 0.6559652,
+      "def": 0.4813307,
+      "elo": 1658.4721410004263
+    },
+    {
+      "id": 40,
+      "name": "Canada",
+      "att": 0.4302543,
+      "def": 0.46708593,
+      "elo": 1638.8706769661978
+    },
+    {
+      "id": 41,
+      "name": "Cape Verde",
+      "att": 0.16585779,
+      "def": 0.23415186,
+      "elo": 1582.07090433277
+    },
+    {
+      "id": 48,
+      "name": "Colombia",
+      "att": 0.63113225,
+      "def": 0.47020385,
+      "elo": 1654.5314734740275
+    },
+    {
+      "id": 53,
+      "name": "Croatia",
+      "att": 0.52415115,
+      "def": 0.4407324,
+      "elo": 1635.8789644794226
+    },
+    {
+      "id": 55,
+      "name": "Curacao",
+      "att": 0.0,
+      "def": -0.0,
+      "elo": 1500.0
+    },
+    {
+      "id": 58,
+      "name": "Czechia",
+      "att": 0.35441932,
+      "def": 0.13551374,
+      "elo": 1590.2761492832474
+    },
+    {
+      "id": 59,
+      "name": "DR Congo",
+      "att": 0.19740374,
+      "def": 0.60869783,
+      "elo": 1615.4278246535268
+    },
+    {
+      "id": 65,
+      "name": "Ecuador",
+      "att": 0.12616174,
+      "def": 0.70562965,
+      "elo": 1627.1290789060777
+    },
+    {
+      "id": 66,
+      "name": "Egypt",
+      "att": 0.29015833,
+      "def": 0.5702548,
+      "elo": 1673.037397565542
+    },
+    {
+      "id": 69,
+      "name": "England",
+      "att": 0.7327754,
+      "def": 0.5778607,
+      "elo": 1689.841920977889
+    },
+    {
+      "id": 78,
+      "name": "France",
+      "att": 0.7098232,
+      "def": 0.5197682,
+      "elo": 1684.0252936487714
+    },
+    {
+      "id": 85,
+      "name": "Germany",
+      "att": 0.7819184,
+      "def": 0.32616293,
+      "elo": 1670.461380151956
+    },
+    {
+      "id": 86,
+      "name": "Ghana",
+      "att": 0.24624328,
+      "def": 0.24819328,
+      "elo": 1487.4279983161205
+    },
+    {
+      "id": 99,
+      "name": "Haiti",
+      "att": 0.5322618,
+      "def": 0.08489346,
+      "elo": 1557.1452127380965
+    },
+    {
+      "id": 108,
+      "name": "Iran",
+      "att": 0.54888463,
+      "def": 0.46004936,
+      "elo": 1692.3122968101527
+    },
+    {
+      "id": 109,
+      "name": "Iraq",
+      "att": 0.19561616,
+      "def": 0.41194025,
+      "elo": 1618.5437020833306
+    },
+    {
+      "id": 114,
+      "name": "Ivory Coast",
+      "att": 0.38626823,
+      "def": 0.49126434,
+      "elo": 1672.6264791475603
+    },
+    {
+      "id": 116,
+      "name": "Japan",
+      "att": 0.81741965,
+      "def": 0.61659527,
+      "elo": 1716.2038616380792
+    },
+    {
+      "id": 118,
+      "name": "Jordan",
+      "att": 0.5447736,
+      "def": 0.26841345,
+      "elo": 1581.7587890341529
+    },
+    {
+      "id": 152,
+      "name": "Mexico",
+      "att": 0.37521505,
+      "def": 0.57892,
+      "elo": 1690.3494980164417
+    },
+    {
+      "id": 157,
+      "name": "Morocco",
+      "att": 0.6629904,
+      "def": 0.6103146,
+      "elo": 1807.2042735003504
+    },
+    {
+      "id": 162,
+      "name": "Netherlands",
+      "att": 0.72292405,
+      "def": 0.35546175,
+      "elo": 1674.7795705047702
+    },
+    {
+      "id": 164,
+      "name": "New Zealand",
+      "att": 0.66812027,
+      "def": 0.359371,
+      "elo": 1526.5632458124
+    },
+    {
+      "id": 172,
+      "name": "Norway",
+      "att": 0.762287,
+      "def": 0.28424695,
+      "elo": 1644.0913712542997
+    },
+    {
+      "id": 177,
+      "name": "Panama",
+      "att": 0.4660348,
+      "def": 0.21736777,
+      "elo": 1595.852636948665
+    },
+    {
+      "id": 179,
+      "name": "Paraguay",
+      "att": 0.114148736,
+      "def": 0.4393161,
+      "elo": 1527.9121158015532
+    },
+    {
+      "id": 183,
+      "name": "Portugal",
+      "att": 0.7834038,
+      "def": 0.43787354,
+      "elo": 1680.8999524454623
+    },
+    {
+      "id": 185,
+      "name": "Qatar",
+      "att": 0.31124848,
+      "def": -0.07209892,
+      "elo": 1539.423954090685
+    },
+    {
+      "id": 212,
+      "name": "Saudi Arabia",
+      "att": 0.15594578,
+      "def": 0.41510394,
+      "elo": 1565.756350368444
+    },
+    {
+      "id": 213,
+      "name": "Scotland",
+      "att": 0.34709635,
+      "def": 0.2259814,
+      "elo": 1551.661087540687
+    },
+    {
+      "id": 214,
+      "name": "Senegal",
+      "att": 0.5960289,
+      "def": 0.5150515,
+      "elo": 1705.443260081084
+    },
+    {
+      "id": 225,
+      "name": "South Africa",
+      "att": 0.29279026,
+      "def": 0.2455981,
+      "elo": 1615.0081274967729
+    },
+    {
+      "id": 226,
+      "name": "South Korea",
+      "att": 0.6354933,
+      "def": 0.40683955,
+      "elo": 1671.1486267303187
+    },
+    {
+      "id": 228,
+      "name": "Spain",
+      "att": 0.9002781,
+      "def": 0.53567505,
+      "elo": 1757.3556101441227
+    },
+    {
+      "id": 232,
+      "name": "Sweden",
+      "att": 0.3817482,
+      "def": 0.024786325,
+      "elo": 1561.739125325688
+    },
+    {
+      "id": 233,
+      "name": "Switzerland",
+      "att": 0.5718528,
+      "def": 0.34367675,
+      "elo": 1610.8125899629874
+    },
+    {
+      "id": 251,
+      "name": "Tunisia",
+      "att": 0.26998124,
+      "def": 0.6067664,
+      "elo": 1604.1275510200187
+    },
+    {
+      "id": 252,
+      "name": "Turkey",
+      "att": 0.53810716,
+      "def": 0.16157193,
+      "elo": 1627.1836945166056
+    },
+    {
+      "id": 257,
+      "name": "USA",
+      "att": 0.5380759,
+      "def": 0.2877948,
+      "elo": 1668.959384567291
+    },
+    {
+      "id": 262,
+      "name": "Uruguay",
+      "att": 0.31748778,
+      "def": 0.6193065,
+      "elo": 1599.4319937296684
+    },
+    {
+      "id": 263,
+      "name": "Uzbekistan",
+      "att": 0.28445026,
+      "def": 0.55022204,
+      "elo": 1649.575476433757
+    }
+  ],
+  "groups": {
+    "A": [
+      "Czechia",
+      "Mexico",
+      "South Africa",
+      "South Korea"
+    ],
+    "B": [
+      "Bosnia and Herzegovina",
+      "Canada",
+      "Qatar",
+      "Switzerland"
+    ],
+    "C": [
+      "Brazil",
+      "Haiti",
+      "Morocco",
+      "Scotland"
+    ],
+    "D": [
+      "Australia",
+      "Paraguay",
+      "Turkey",
+      "USA"
+    ],
+    "E": [
+      "Curacao",
+      "Ecuador",
+      "Germany",
+      "Ivory Coast"
+    ],
+    "F": [
+      "Japan",
+      "Netherlands",
+      "Sweden",
+      "Tunisia"
+    ],
+    "G": [
+      "Belgium",
+      "Egypt",
+      "Iran",
+      "New Zealand"
+    ],
+    "H": [
+      "Cape Verde",
+      "Saudi Arabia",
+      "Spain",
+      "Uruguay"
+    ],
+    "I": [
+      "France",
+      "Iraq",
+      "Norway",
+      "Senegal"
+    ],
+    "J": [
+      "Algeria",
+      "Argentina",
+      "Austria",
+      "Jordan"
+    ],
+    "K": [
+      "Colombia",
+      "DR Congo",
+      "Portugal",
+      "Uzbekistan"
+    ],
+    "L": [
+      "Croatia",
+      "England",
+      "Ghana",
+      "Panama"
+    ]
+  },
+  "schedule": [
+    {
+      "match_number": 1,
+      "date": "6/11/2026",
+      "day": "Thursday",
+      "time_local": "13:00",
+      "kickoff_utc": "2026-06-11T13:00:00-06:00",
+      "venue_timezone": "America/Mexico_City",
+      "team1": "Mexico",
+      "team2": "South Africa",
+      "group": "A",
+      "round": null,
+      "stage": "group",
+      "host_city": "Mexico City",
+      "stadium": "Estadio Banorte"
+    },
+    {
+      "match_number": 2,
+      "date": "6/11/2026",
+      "day": "Thursday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-06-11T20:00:00-06:00",
+      "venue_timezone": "America/Mexico_City",
+      "team1": "South Korea",
+      "team2": "Czechia",
+      "group": "A",
+      "round": null,
+      "stage": "group",
+      "host_city": "Guadalajara",
+      "stadium": "Estadio Akron"
+    },
+    {
+      "match_number": 3,
+      "date": "6/12/2026",
+      "day": "Friday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-06-12T15:00:00-04:00",
+      "venue_timezone": "America/Toronto",
+      "team1": "Canada",
+      "team2": "Bosnia and Herzegovina",
+      "group": "B",
+      "round": null,
+      "stage": "group",
+      "host_city": "Toronto",
+      "stadium": "BMO Field"
+    },
+    {
+      "match_number": 4,
+      "date": "6/12/2026",
+      "day": "Friday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-12T18:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "USA",
+      "team2": "Paraguay",
+      "group": "D",
+      "round": null,
+      "stage": "group",
+      "host_city": "Inglewood",
+      "stadium": "SoFi Stadium"
+    },
+    {
+      "match_number": 5,
+      "date": "6/13/2026",
+      "day": "Saturday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-13T12:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Qatar",
+      "team2": "Switzerland",
+      "group": "B",
+      "round": null,
+      "stage": "group",
+      "host_city": "Santa Clara",
+      "stadium": "Levi's Stadium"
+    },
+    {
+      "match_number": 6,
+      "date": "6/13/2026",
+      "day": "Saturday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-13T18:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Brazil",
+      "team2": "Morocco",
+      "group": "C",
+      "round": null,
+      "stage": "group",
+      "host_city": "East Rutherford",
+      "stadium": "MetLife Stadium"
+    },
+    {
+      "match_number": 7,
+      "date": "6/13/2026",
+      "day": "Saturday",
+      "time_local": "21:00",
+      "kickoff_utc": "2026-06-13T21:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Haiti",
+      "team2": "Scotland",
+      "group": "C",
+      "round": null,
+      "stage": "group",
+      "host_city": "Foxborough",
+      "stadium": "Gillette Stadium"
+    },
+    {
+      "match_number": 8,
+      "date": "6/12/2026",
+      "day": "Friday",
+      "time_local": "21:00",
+      "kickoff_utc": "2026-06-12T21:00:00-07:00",
+      "venue_timezone": "America/Vancouver",
+      "team1": "Australia",
+      "team2": "Turkey",
+      "group": "D",
+      "round": null,
+      "stage": "group",
+      "host_city": "Vancouver",
+      "stadium": "BC Place"
+    },
+    {
+      "match_number": 9,
+      "date": "6/14/2026",
+      "day": "Sunday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-14T12:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Germany",
+      "team2": "Curacao",
+      "group": "E",
+      "round": null,
+      "stage": "group",
+      "host_city": "Houston",
+      "stadium": "NRG Stadium"
+    },
+    {
+      "match_number": 10,
+      "date": "6/14/2026",
+      "day": "Sunday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-06-14T15:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Netherlands",
+      "team2": "Japan",
+      "group": "F",
+      "round": null,
+      "stage": "group",
+      "host_city": "Arlington",
+      "stadium": "AT&T Stadium"
+    },
+    {
+      "match_number": 11,
+      "date": "6/14/2026",
+      "day": "Sunday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-14T19:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Ivory Coast",
+      "team2": "Ecuador",
+      "group": "E",
+      "round": null,
+      "stage": "group",
+      "host_city": "Philadelphia",
+      "stadium": "Lincoln Financial Field"
+    },
+    {
+      "match_number": 12,
+      "date": "6/14/2026",
+      "day": "Sunday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-06-14T20:00:00-06:00",
+      "venue_timezone": "America/Monterrey",
+      "team1": "Sweden",
+      "team2": "Tunisia",
+      "group": "F",
+      "round": null,
+      "stage": "group",
+      "host_city": "Guadalupe",
+      "stadium": "Estadio BBVA"
+    },
+    {
+      "match_number": 13,
+      "date": "6/15/2026",
+      "day": "Monday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-15T12:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Spain",
+      "team2": "Cape Verde",
+      "group": "H",
+      "round": null,
+      "stage": "group",
+      "host_city": "Atlanta",
+      "stadium": "Mercedes-Benz Stadium"
+    },
+    {
+      "match_number": 14,
+      "date": "6/15/2026",
+      "day": "Monday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-15T12:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Belgium",
+      "team2": "Egypt",
+      "group": "G",
+      "round": null,
+      "stage": "group",
+      "host_city": "Seattle",
+      "stadium": "Lumen Field"
+    },
+    {
+      "match_number": 15,
+      "date": "6/15/2026",
+      "day": "Monday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-15T18:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Saudi Arabia",
+      "team2": "Uruguay",
+      "group": "H",
+      "round": null,
+      "stage": "group",
+      "host_city": "Miami Gardens",
+      "stadium": "Hard Rock Stadium"
+    },
+    {
+      "match_number": 16,
+      "date": "6/15/2026",
+      "day": "Monday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-15T18:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Iran",
+      "team2": "New Zealand",
+      "group": "G",
+      "round": null,
+      "stage": "group",
+      "host_city": "Inglewood",
+      "stadium": "SoFi Stadium"
+    },
+    {
+      "match_number": 17,
+      "date": "6/16/2026",
+      "day": "Tuesday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-06-16T15:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "France",
+      "team2": "Senegal",
+      "group": "I",
+      "round": null,
+      "stage": "group",
+      "host_city": "East Rutherford",
+      "stadium": "MetLife Stadium"
+    },
+    {
+      "match_number": 18,
+      "date": "6/16/2026",
+      "day": "Tuesday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-16T18:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Iraq",
+      "team2": "Norway",
+      "group": "I",
+      "round": null,
+      "stage": "group",
+      "host_city": "Foxborough",
+      "stadium": "Gillette Stadium"
+    },
+    {
+      "match_number": 19,
+      "date": "6/16/2026",
+      "day": "Tuesday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-06-16T20:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Argentina",
+      "team2": "Algeria",
+      "group": "J",
+      "round": null,
+      "stage": "group",
+      "host_city": "Kansas City",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+    },
+    {
+      "match_number": 20,
+      "date": "6/15/2026",
+      "day": "Monday",
+      "time_local": "21:00",
+      "kickoff_utc": "2026-06-15T21:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Austria",
+      "team2": "Jordan",
+      "group": "J",
+      "round": null,
+      "stage": "group",
+      "host_city": "Santa Clara",
+      "stadium": "Levi's Stadium"
+    },
+    {
+      "match_number": 21,
+      "date": "6/17/2026",
+      "day": "Wednesday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-17T12:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Portugal",
+      "team2": "DR Congo",
+      "group": "K",
+      "round": null,
+      "stage": "group",
+      "host_city": "Houston",
+      "stadium": "NRG Stadium"
+    },
+    {
+      "match_number": 22,
+      "date": "6/17/2026",
+      "day": "Wednesday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-06-17T15:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "England",
+      "team2": "Croatia",
+      "group": "L",
+      "round": null,
+      "stage": "group",
+      "host_city": "Arlington",
+      "stadium": "AT&T Stadium"
+    },
+    {
+      "match_number": 23,
+      "date": "6/17/2026",
+      "day": "Wednesday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-17T19:00:00-04:00",
+      "venue_timezone": "America/Toronto",
+      "team1": "Ghana",
+      "team2": "Panama",
+      "group": "L",
+      "round": null,
+      "stage": "group",
+      "host_city": "Toronto",
+      "stadium": "BMO Field"
+    },
+    {
+      "match_number": 24,
+      "date": "6/17/2026",
+      "day": "Wednesday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-06-17T20:00:00-06:00",
+      "venue_timezone": "America/Mexico_City",
+      "team1": "Uzbekistan",
+      "team2": "Colombia",
+      "group": "K",
+      "round": null,
+      "stage": "group",
+      "host_city": "Mexico City",
+      "stadium": "Estadio Banorte"
+    },
+    {
+      "match_number": 25,
+      "date": "6/18/2026",
+      "day": "Thursday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-18T12:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Czechia",
+      "team2": "South Africa",
+      "group": "A",
+      "round": null,
+      "stage": "group",
+      "host_city": "Atlanta",
+      "stadium": "Mercedes-Benz Stadium"
+    },
+    {
+      "match_number": 26,
+      "date": "6/18/2026",
+      "day": "Thursday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-18T12:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Switzerland",
+      "team2": "Bosnia and Herzegovina",
+      "group": "B",
+      "round": null,
+      "stage": "group",
+      "host_city": "Inglewood",
+      "stadium": "SoFi Stadium"
+    },
+    {
+      "match_number": 27,
+      "date": "6/18/2026",
+      "day": "Thursday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-06-18T15:00:00-07:00",
+      "venue_timezone": "America/Vancouver",
+      "team1": "Canada",
+      "team2": "Qatar",
+      "group": "B",
+      "round": null,
+      "stage": "group",
+      "host_city": "Vancouver",
+      "stadium": "BC Place"
+    },
+    {
+      "match_number": 28,
+      "date": "6/18/2026",
+      "day": "Thursday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-18T19:00:00-06:00",
+      "venue_timezone": "America/Mexico_City",
+      "team1": "Mexico",
+      "team2": "South Korea",
+      "group": "A",
+      "round": null,
+      "stage": "group",
+      "host_city": "Guadalajara",
+      "stadium": "Estadio Akron"
+    },
+    {
+      "match_number": 29,
+      "date": "6/19/2026",
+      "day": "Friday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-19T12:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "USA",
+      "team2": "Australia",
+      "group": "D",
+      "round": null,
+      "stage": "group",
+      "host_city": "Seattle",
+      "stadium": "Lumen Field"
+    },
+    {
+      "match_number": 30,
+      "date": "6/19/2026",
+      "day": "Friday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-19T18:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Scotland",
+      "team2": "Morocco",
+      "group": "C",
+      "round": null,
+      "stage": "group",
+      "host_city": "Foxborough",
+      "stadium": "Gillette Stadium"
+    },
+    {
+      "match_number": 31,
+      "date": "6/19/2026",
+      "day": "Friday",
+      "time_local": "21:00",
+      "kickoff_utc": "2026-06-19T21:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Brazil",
+      "team2": "Haiti",
+      "group": "C",
+      "round": null,
+      "stage": "group",
+      "host_city": "Philadelphia",
+      "stadium": "Lincoln Financial Field"
+    },
+    {
+      "match_number": 32,
+      "date": "6/18/2026",
+      "day": "Thursday",
+      "time_local": "21:00",
+      "kickoff_utc": "2026-06-18T21:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Turkey",
+      "team2": "Paraguay",
+      "group": "D",
+      "round": null,
+      "stage": "group",
+      "host_city": "Santa Clara",
+      "stadium": "Levi's Stadium"
+    },
+    {
+      "match_number": 33,
+      "date": "6/20/2026",
+      "day": "Saturday",
+      "time_local": "16:00",
+      "kickoff_utc": "2026-06-20T16:00:00-04:00",
+      "venue_timezone": "America/Toronto",
+      "team1": "Germany",
+      "team2": "Ivory Coast",
+      "group": "E",
+      "round": null,
+      "stage": "group",
+      "host_city": "Toronto",
+      "stadium": "BMO Field"
+    },
+    {
+      "match_number": 34,
+      "date": "6/20/2026",
+      "day": "Saturday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-20T12:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Netherlands",
+      "team2": "Sweden",
+      "group": "F",
+      "round": null,
+      "stage": "group",
+      "host_city": "Houston",
+      "stadium": "NRG Stadium"
+    },
+    {
+      "match_number": 35,
+      "date": "6/20/2026",
+      "day": "Saturday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-20T19:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Ecuador",
+      "team2": "Curacao",
+      "group": "E",
+      "round": null,
+      "stage": "group",
+      "host_city": "Kansas City",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+    },
+    {
+      "match_number": 36,
+      "date": "6/19/2026",
+      "day": "Friday",
+      "time_local": "22:00",
+      "kickoff_utc": "2026-06-19T22:00:00-06:00",
+      "venue_timezone": "America/Monterrey",
+      "team1": "Tunisia",
+      "team2": "Japan",
+      "group": "F",
+      "round": null,
+      "stage": "group",
+      "host_city": "Monterrey",
+      "stadium": "Estadio BBVA"
+    },
+    {
+      "match_number": 37,
+      "date": "6/21/2026",
+      "day": "Sunday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-21T12:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Spain",
+      "team2": "Saudi Arabia",
+      "group": "H",
+      "round": null,
+      "stage": "group",
+      "host_city": "Atlanta",
+      "stadium": "Mercedes-Benz Stadium"
+    },
+    {
+      "match_number": 38,
+      "date": "6/21/2026",
+      "day": "Sunday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-21T12:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Belgium",
+      "team2": "Iran",
+      "group": "G",
+      "round": null,
+      "stage": "group",
+      "host_city": "Inglewood",
+      "stadium": "SoFi Stadium"
+    },
+    {
+      "match_number": 39,
+      "date": "6/21/2026",
+      "day": "Sunday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-21T18:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Uruguay",
+      "team2": "Cape Verde",
+      "group": "H",
+      "round": null,
+      "stage": "group",
+      "host_city": "Miami Gardens",
+      "stadium": "Hard Rock Stadium"
+    },
+    {
+      "match_number": 40,
+      "date": "6/21/2026",
+      "day": "Sunday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-21T18:00:00-07:00",
+      "venue_timezone": "America/Vancouver",
+      "team1": "New Zealand",
+      "team2": "Egypt",
+      "group": "G",
+      "round": null,
+      "stage": "group",
+      "host_city": "Vancouver",
+      "stadium": "BC Place"
+    },
+    {
+      "match_number": 41,
+      "date": "6/22/2026",
+      "day": "Monday",
+      "time_local": "17:00",
+      "kickoff_utc": "2026-06-22T17:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "France",
+      "team2": "Iraq",
+      "group": "I",
+      "round": null,
+      "stage": "group",
+      "host_city": "Philadelphia",
+      "stadium": "Lincoln Financial Field"
+    },
+    {
+      "match_number": 42,
+      "date": "6/22/2026",
+      "day": "Monday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-06-22T20:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Norway",
+      "team2": "Senegal",
+      "group": "I",
+      "round": null,
+      "stage": "group",
+      "host_city": "East Rutherford",
+      "stadium": "MetLife Stadium"
+    },
+    {
+      "match_number": 43,
+      "date": "6/22/2026",
+      "day": "Monday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-22T12:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Argentina",
+      "team2": "Austria",
+      "group": "J",
+      "round": null,
+      "stage": "group",
+      "host_city": "Arlington",
+      "stadium": "AT&T Stadium"
+    },
+    {
+      "match_number": 44,
+      "date": "6/22/2026",
+      "day": "Monday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-06-22T20:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Jordan",
+      "team2": "Algeria",
+      "group": "J",
+      "round": null,
+      "stage": "group",
+      "host_city": "Santa Clara",
+      "stadium": "Levi's Stadium"
+    },
+    {
+      "match_number": 45,
+      "date": "6/23/2026",
+      "day": "Tuesday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-23T12:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Portugal",
+      "team2": "Uzbekistan",
+      "group": "K",
+      "round": null,
+      "stage": "group",
+      "host_city": "Houston",
+      "stadium": "NRG Stadium"
+    },
+    {
+      "match_number": 46,
+      "date": "6/23/2026",
+      "day": "Tuesday",
+      "time_local": "16:00",
+      "kickoff_utc": "2026-06-23T16:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "England",
+      "team2": "Ghana",
+      "group": "L",
+      "round": null,
+      "stage": "group",
+      "host_city": "Foxborough",
+      "stadium": "Gillette Stadium"
+    },
+    {
+      "match_number": 47,
+      "date": "6/23/2026",
+      "day": "Tuesday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-23T19:00:00-04:00",
+      "venue_timezone": "America/Toronto",
+      "team1": "Panama",
+      "team2": "Croatia",
+      "group": "L",
+      "round": null,
+      "stage": "group",
+      "host_city": "Toronto",
+      "stadium": "BMO Field"
+    },
+    {
+      "match_number": 48,
+      "date": "6/23/2026",
+      "day": "Tuesday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-06-23T20:00:00-06:00",
+      "venue_timezone": "America/Mexico_City",
+      "team1": "Colombia",
+      "team2": "DR Congo",
+      "group": "K",
+      "round": null,
+      "stage": "group",
+      "host_city": "Guadalajara",
+      "stadium": "Estadio Akron"
+    },
+    {
+      "match_number": 49,
+      "date": "6/24/2026",
+      "day": "Wednesday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-24T19:00:00-06:00",
+      "venue_timezone": "America/Mexico_City",
+      "team1": "Czechia",
+      "team2": "Mexico",
+      "group": "A",
+      "round": null,
+      "stage": "group",
+      "host_city": "Mexico City",
+      "stadium": "Estadio Banorte"
+    },
+    {
+      "match_number": 50,
+      "date": "6/24/2026",
+      "day": "Wednesday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-24T19:00:00-06:00",
+      "venue_timezone": "America/Monterrey",
+      "team1": "South Africa",
+      "team2": "South Korea",
+      "group": "A",
+      "round": null,
+      "stage": "group",
+      "host_city": "Monterrey",
+      "stadium": "Estadio BBVA"
+    },
+    {
+      "match_number": 51,
+      "date": "6/24/2026",
+      "day": "Wednesday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-24T12:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Switzerland",
+      "team2": "Canada",
+      "group": "B",
+      "round": null,
+      "stage": "group",
+      "host_city": "Los Angeles",
+      "stadium": "SoFi Stadium"
+    },
+    {
+      "match_number": 52,
+      "date": "6/24/2026",
+      "day": "Wednesday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-24T12:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Bosnia and Herzegovina",
+      "team2": "Qatar",
+      "group": "B",
+      "round": null,
+      "stage": "group",
+      "host_city": "Seattle",
+      "stadium": "Lumen Field"
+    },
+    {
+      "match_number": 53,
+      "date": "6/24/2026",
+      "day": "Wednesday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-24T18:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Scotland",
+      "team2": "Brazil",
+      "group": "C",
+      "round": null,
+      "stage": "group",
+      "host_city": "Miami Gardens",
+      "stadium": "Hard Rock Stadium"
+    },
+    {
+      "match_number": 54,
+      "date": "6/24/2026",
+      "day": "Wednesday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-24T18:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Morocco",
+      "team2": "Haiti",
+      "group": "C",
+      "round": null,
+      "stage": "group",
+      "host_city": "Atlanta",
+      "stadium": "Mercedes-Benz Stadium"
+    },
+    {
+      "match_number": 55,
+      "date": "6/25/2026",
+      "day": "Thursday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-25T19:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Turkey",
+      "team2": "USA",
+      "group": "D",
+      "round": null,
+      "stage": "group",
+      "host_city": "Los Angeles",
+      "stadium": "SoFi Stadium"
+    },
+    {
+      "match_number": 56,
+      "date": "6/25/2026",
+      "day": "Thursday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-25T19:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Paraguay",
+      "team2": "Australia",
+      "group": "D",
+      "round": null,
+      "stage": "group",
+      "host_city": "Santa Clara",
+      "stadium": "Levi's Stadium"
+    },
+    {
+      "match_number": 57,
+      "date": "6/25/2026",
+      "day": "Thursday",
+      "time_local": "16:00",
+      "kickoff_utc": "2026-06-25T16:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Ecuador",
+      "team2": "Germany",
+      "group": "E",
+      "round": null,
+      "stage": "group",
+      "host_city": "East Rutherford",
+      "stadium": "MetLife Stadium"
+    },
+    {
+      "match_number": 58,
+      "date": "6/25/2026",
+      "day": "Thursday",
+      "time_local": "16:00",
+      "kickoff_utc": "2026-06-25T16:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Curacao",
+      "team2": "Ivory Coast",
+      "group": "E",
+      "round": null,
+      "stage": "group",
+      "host_city": "Philadelphia",
+      "stadium": "Lincoln Financial Field"
+    },
+    {
+      "match_number": 59,
+      "date": "6/25/2026",
+      "day": "Thursday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-25T18:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Japan",
+      "team2": "Sweden",
+      "group": "F",
+      "round": null,
+      "stage": "group",
+      "host_city": "Dallas",
+      "stadium": "AT&T Stadium"
+    },
+    {
+      "match_number": 60,
+      "date": "6/25/2026",
+      "day": "Thursday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-25T18:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Tunisia",
+      "team2": "Netherlands",
+      "group": "F",
+      "round": null,
+      "stage": "group",
+      "host_city": "Kansas City",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+    },
+    {
+      "match_number": 61,
+      "date": "6/26/2026",
+      "day": "Friday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-06-26T20:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Egypt",
+      "team2": "Iran",
+      "group": "G",
+      "round": null,
+      "stage": "group",
+      "host_city": "Seattle",
+      "stadium": "Lumen Field"
+    },
+    {
+      "match_number": 62,
+      "date": "6/26/2026",
+      "day": "Friday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-06-26T20:00:00-07:00",
+      "venue_timezone": "America/Vancouver",
+      "team1": "New Zealand",
+      "team2": "Belgium",
+      "group": "G",
+      "round": null,
+      "stage": "group",
+      "host_city": "Vancouver",
+      "stadium": "BC Place"
+    },
+    {
+      "match_number": 63,
+      "date": "6/26/2026",
+      "day": "Friday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-26T19:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Cape Verde",
+      "team2": "Saudi Arabia",
+      "group": "H",
+      "round": null,
+      "stage": "group",
+      "host_city": "Houston",
+      "stadium": "NRG Stadium"
+    },
+    {
+      "match_number": 64,
+      "date": "6/26/2026",
+      "day": "Friday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-06-26T18:00:00-06:00",
+      "venue_timezone": "America/Mexico_City",
+      "team1": "Uruguay",
+      "team2": "Spain",
+      "group": "H",
+      "round": null,
+      "stage": "group",
+      "host_city": "Guadalajara",
+      "stadium": "Estadio Akron"
+    },
+    {
+      "match_number": 65,
+      "date": "6/27/2026",
+      "day": "Saturday",
+      "time_local": "21:00",
+      "kickoff_utc": "2026-06-27T21:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Algeria",
+      "team2": "Austria",
+      "group": "J",
+      "round": null,
+      "stage": "group",
+      "host_city": "Kansas City",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+    },
+    {
+      "match_number": 66,
+      "date": "6/27/2026",
+      "day": "Saturday",
+      "time_local": "21:00",
+      "kickoff_utc": "2026-06-27T21:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Jordan",
+      "team2": "Argentina",
+      "group": "J",
+      "round": null,
+      "stage": "group",
+      "host_city": "Dallas",
+      "stadium": "AT&T Stadium"
+    },
+    {
+      "match_number": 67,
+      "date": "6/27/2026",
+      "day": "Saturday",
+      "time_local": "19:30",
+      "kickoff_utc": "2026-06-27T19:30:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Colombia",
+      "team2": "Portugal",
+      "group": "K",
+      "round": null,
+      "stage": "group",
+      "host_city": "Miami Gardens",
+      "stadium": "Hard Rock Stadium"
+    },
+    {
+      "match_number": 68,
+      "date": "6/27/2026",
+      "day": "Saturday",
+      "time_local": "19:30",
+      "kickoff_utc": "2026-06-27T19:30:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "DR Congo",
+      "team2": "Uzbekistan",
+      "group": "K",
+      "round": null,
+      "stage": "group",
+      "host_city": "Atlanta",
+      "stadium": "Mercedes-Benz Stadium"
+    },
+    {
+      "match_number": 69,
+      "date": "6/27/2026",
+      "day": "Saturday",
+      "time_local": "17:00",
+      "kickoff_utc": "2026-06-27T17:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Panama",
+      "team2": "England",
+      "group": "L",
+      "round": null,
+      "stage": "group",
+      "host_city": "East Rutherford",
+      "stadium": "MetLife Stadium"
+    },
+    {
+      "match_number": 70,
+      "date": "6/27/2026",
+      "day": "Saturday",
+      "time_local": "17:00",
+      "kickoff_utc": "2026-06-27T17:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Croatia",
+      "team2": "Ghana",
+      "group": "L",
+      "round": null,
+      "stage": "group",
+      "host_city": "Philadelphia",
+      "stadium": "Lincoln Financial Field"
+    },
+    {
+      "match_number": 71,
+      "date": "6/26/2026",
+      "day": "Friday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-06-26T15:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Norway",
+      "team2": "France",
+      "group": "I",
+      "round": null,
+      "stage": "group",
+      "host_city": "Foxborough",
+      "stadium": "Gillette Stadium"
+    },
+    {
+      "match_number": 72,
+      "date": "6/26/2026",
+      "day": "Friday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-06-26T15:00:00-04:00",
+      "venue_timezone": "America/Toronto",
+      "team1": "Senegal",
+      "team2": "Iraq",
+      "group": "I",
+      "round": null,
+      "stage": "group",
+      "host_city": "Toronto",
+      "stadium": "BMO Field"
+    },
+    {
+      "match_number": 73,
+      "date": "6/28/2026",
+      "day": "Sunday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-28T12:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Runner-up Group A",
+      "team2": "Runner-up Group B",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Los Angeles",
+      "stadium": "SoFi Stadium"
+    },
+    {
+      "match_number": 74,
+      "date": "6/29/2026",
+      "day": "Monday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-29T12:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Winner Group C",
+      "team2": "Runner-up Group F",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Houston",
+      "stadium": "NRG Stadium"
+    },
+    {
+      "match_number": 75,
+      "date": "6/29/2026",
+      "day": "Monday",
+      "time_local": "16:30",
+      "kickoff_utc": "2026-06-29T16:30:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Group E",
+      "team2": "Third-place qualifier",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Boston",
+      "stadium": "Gillette Stadium"
+    },
+    {
+      "match_number": 76,
+      "date": "6/29/2026",
+      "day": "Monday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-29T19:00:00-06:00",
+      "venue_timezone": "America/Monterrey",
+      "team1": "Winner Group F",
+      "team2": "Runner-up Group C",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Monterrey",
+      "stadium": "Estadio BBVA"
+    },
+    {
+      "match_number": 77,
+      "date": "6/30/2026",
+      "day": "Tuesday",
+      "time_local": "17:00",
+      "kickoff_utc": "2026-06-30T17:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Group I",
+      "team2": "Third-place qualifier",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "East Rutherford",
+      "stadium": "MetLife Stadium"
+    },
+    {
+      "match_number": 78,
+      "date": "6/30/2026",
+      "day": "Tuesday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-06-30T12:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Runner-up Group E",
+      "team2": "Runner-up Group I",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Arlington",
+      "stadium": "AT&T Stadium"
+    },
+    {
+      "match_number": 79,
+      "date": "6/30/2026",
+      "day": "Tuesday",
+      "time_local": "19:00",
+      "kickoff_utc": "2026-06-30T19:00:00-06:00",
+      "venue_timezone": "America/Mexico_City",
+      "team1": "Winner Group A",
+      "team2": "Third-place qualifier",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Mexico City",
+      "stadium": "Estadio Banorte"
+    },
+    {
+      "match_number": 80,
+      "date": "7/1/2026",
+      "day": "Wednesday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-07-01T12:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Group L",
+      "team2": "Third-place qualifier",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Atlanta",
+      "stadium": "Mercedes-Benz Stadium"
+    },
+    {
+      "match_number": 81,
+      "date": "7/1/2026",
+      "day": "Wednesday",
+      "time_local": "17:00",
+      "kickoff_utc": "2026-07-01T17:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Winner Group D",
+      "team2": "Third-place qualifier",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "San Francisco Bay",
+      "stadium": "Levi's Stadium"
+    },
+    {
+      "match_number": 82,
+      "date": "7/1/2026",
+      "day": "Wednesday",
+      "time_local": "13:00",
+      "kickoff_utc": "2026-07-01T13:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Winner Group G",
+      "team2": "Third-place qualifier",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Seattle",
+      "stadium": "Lumen Field"
+    },
+    {
+      "match_number": 83,
+      "date": "7/2/2026",
+      "day": "Thursday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-07-02T20:00:00-07:00",
+      "venue_timezone": "America/Vancouver",
+      "team1": "Winner Group B",
+      "team2": "Third-place qualifier",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Vancouver",
+      "stadium": "BC Place"
+    },
+    {
+      "match_number": 84,
+      "date": "7/2/2026",
+      "day": "Thursday",
+      "time_local": "16:00",
+      "kickoff_utc": "2026-07-02T16:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Winner Group H",
+      "team2": "Runner-up Group J",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Los Angeles",
+      "stadium": "SoFi Stadium"
+    },
+    {
+      "match_number": 85,
+      "date": "7/2/2026",
+      "day": "Thursday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-07-02T15:00:00-04:00",
+      "venue_timezone": "America/Toronto",
+      "team1": "Runner-up Group K",
+      "team2": "Runner-up Group L",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Toronto",
+      "stadium": "BMO Field"
+    },
+    {
+      "match_number": 86,
+      "date": "7/3/2026",
+      "day": "Friday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-07-03T18:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Group J",
+      "team2": "Runner-up Group H",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Miami Gardens",
+      "stadium": "Hard Rock Stadium"
+    },
+    {
+      "match_number": 87,
+      "date": "7/3/2026",
+      "day": "Friday",
+      "time_local": "20:30",
+      "kickoff_utc": "2026-07-03T20:30:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Winner Group K",
+      "team2": "Third-place qualifier",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Kansas City",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+    },
+    {
+      "match_number": 88,
+      "date": "7/3/2026",
+      "day": "Friday",
+      "time_local": "13:00",
+      "kickoff_utc": "2026-07-03T13:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Runner-up Group D",
+      "team2": "Runner-up Group G",
+      "group": "R16",
+      "round": "R16",
+      "stage": "knockout",
+      "host_city": "Dallas",
+      "stadium": "AT&T Stadium"
+    },
+    {
+      "match_number": 89,
+      "date": "7/4/2026",
+      "day": "Saturday",
+      "time_local": "13:00",
+      "kickoff_utc": "2026-07-04T13:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Match 71",
+      "team2": "Winner Match 74",
+      "group": "QF",
+      "round": "QF",
+      "stage": "knockout",
+      "host_city": "Boston",
+      "stadium": "Gillette Stadium"
+    },
+    {
+      "match_number": 90,
+      "date": "7/4/2026",
+      "day": "Saturday",
+      "time_local": "16:00",
+      "kickoff_utc": "2026-07-04T16:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Winner Match 72",
+      "team2": "Winner Match 76",
+      "group": "QF",
+      "round": "QF",
+      "stage": "knockout",
+      "host_city": "Houston",
+      "stadium": "NRG Stadium"
+    },
+    {
+      "match_number": 91,
+      "date": "7/5/2026",
+      "day": "Sunday",
+      "time_local": "16:00",
+      "kickoff_utc": "2026-07-05T16:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Match 73",
+      "team2": "Winner Match 75",
+      "group": "QF",
+      "round": "QF",
+      "stage": "knockout",
+      "host_city": "East Rutherford",
+      "stadium": "MetLife Stadium"
+    },
+    {
+      "match_number": 92,
+      "date": "7/5/2026",
+      "day": "Sunday",
+      "time_local": "18:00",
+      "kickoff_utc": "2026-07-05T18:00:00-06:00",
+      "venue_timezone": "America/Mexico_City",
+      "team1": "Winner Match 77",
+      "team2": "Winner Match 78",
+      "group": "QF",
+      "round": "QF",
+      "stage": "knockout",
+      "host_city": "Mexico City",
+      "stadium": "Estadio Banorte"
+    },
+    {
+      "match_number": 93,
+      "date": "7/6/2026",
+      "day": "Monday",
+      "time_local": "14:00",
+      "kickoff_utc": "2026-07-06T14:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Winner Match 81",
+      "team2": "Winner Match 82",
+      "group": "QF",
+      "round": "QF",
+      "stage": "knockout",
+      "host_city": "Dallas",
+      "stadium": "AT&T Stadium"
+    },
+    {
+      "match_number": 94,
+      "date": "7/6/2026",
+      "day": "Monday",
+      "time_local": "17:00",
+      "kickoff_utc": "2026-07-06T17:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Winner Match 79",
+      "team2": "Winner Match 80",
+      "group": "QF",
+      "round": "QF",
+      "stage": "knockout",
+      "host_city": "Seattle",
+      "stadium": "Lumen Field"
+    },
+    {
+      "match_number": 95,
+      "date": "7/7/2026",
+      "day": "Tuesday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-07-07T12:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Match 84",
+      "team2": "Winner Match 85",
+      "group": "QF",
+      "round": "QF",
+      "stage": "knockout",
+      "host_city": "Atlanta",
+      "stadium": "Mercedes-Benz Stadium"
+    },
+    {
+      "match_number": 96,
+      "date": "7/7/2026",
+      "day": "Tuesday",
+      "time_local": "13:00",
+      "kickoff_utc": "2026-07-07T13:00:00-07:00",
+      "venue_timezone": "America/Vancouver",
+      "team1": "Winner Match 83",
+      "team2": "Winner Match 86",
+      "group": "QF",
+      "round": "QF",
+      "stage": "knockout",
+      "host_city": "Vancouver",
+      "stadium": "BC Place"
+    },
+    {
+      "match_number": 97,
+      "date": "7/9/2026",
+      "day": "Thursday",
+      "time_local": "16:00",
+      "kickoff_utc": "2026-07-09T16:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Match 89",
+      "team2": "Winner Match 90",
+      "group": "SF",
+      "round": "SF",
+      "stage": "knockout",
+      "host_city": "Boston",
+      "stadium": "Gillette Stadium"
+    },
+    {
+      "match_number": 98,
+      "date": "7/10/2026",
+      "day": "Friday",
+      "time_local": "12:00",
+      "kickoff_utc": "2026-07-10T12:00:00-07:00",
+      "venue_timezone": "America/Los_Angeles",
+      "team1": "Winner Match 91",
+      "team2": "Winner Match 92",
+      "group": "SF",
+      "round": "SF",
+      "stage": "knockout",
+      "host_city": "Los Angeles",
+      "stadium": "SoFi Stadium"
+    },
+    {
+      "match_number": 99,
+      "date": "7/11/2026",
+      "day": "Saturday",
+      "time_local": "17:00",
+      "kickoff_utc": "2026-07-11T17:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Match 93",
+      "team2": "Winner Match 94",
+      "group": "SF",
+      "round": "SF",
+      "stage": "knockout",
+      "host_city": "Miami Gardens",
+      "stadium": "Hard Rock Stadium"
+    },
+    {
+      "match_number": 100,
+      "date": "7/11/2026",
+      "day": "Saturday",
+      "time_local": "20:00",
+      "kickoff_utc": "2026-07-11T20:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Winner Match 95",
+      "team2": "Winner Match 96",
+      "group": "SF",
+      "round": "SF",
+      "stage": "knockout",
+      "host_city": "Kansas City",
+      "stadium": "GEHA Field at Arrowhead Stadium"
+    },
+    {
+      "match_number": 101,
+      "date": "7/14/2026",
+      "day": "Tuesday",
+      "time_local": "14:00",
+      "kickoff_utc": "2026-07-14T14:00:00-05:00",
+      "venue_timezone": "America/Chicago",
+      "team1": "Winner Match 97",
+      "team2": "Winner Match 98",
+      "group": "SF",
+      "round": "SF",
+      "stage": "knockout",
+      "host_city": "Dallas",
+      "stadium": "AT&T Stadium"
+    },
+    {
+      "match_number": 102,
+      "date": "7/15/2026",
+      "day": "Wednesday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-07-15T15:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Match 99",
+      "team2": "Winner Match 100",
+      "group": "SF",
+      "round": "SF",
+      "stage": "knockout",
+      "host_city": "Atlanta",
+      "stadium": "Mercedes-Benz Stadium"
+    },
+    {
+      "match_number": 103,
+      "date": "7/18/2026",
+      "day": "Saturday",
+      "time_local": "17:00",
+      "kickoff_utc": "2026-07-18T17:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Loser Match 101",
+      "team2": "Loser Match 102",
+      "group": "3P",
+      "round": "3P",
+      "stage": "knockout",
+      "host_city": "Miami Gardens",
+      "stadium": "Hard Rock Stadium"
+    },
+    {
+      "match_number": 104,
+      "date": "7/19/2026",
+      "day": "Sunday",
+      "time_local": "15:00",
+      "kickoff_utc": "2026-07-19T15:00:00-04:00",
+      "venue_timezone": "America/New_York",
+      "team1": "Winner Match 101",
+      "team2": "Winner Match 102",
+      "group": "Final",
+      "round": "Final",
+      "stage": "knockout",
+      "host_city": "East Rutherford",
+      "stadium": "MetLife Stadium"
+    }
+  ],
+  "model_picks": {
+    "A": {
+      "first": "South Korea",
+      "p_first": 0.4079,
+      "second": "Mexico",
+      "p_second": 0.2919,
+      "third_qualifier": "Czechia",
+      "p_third_qualifies": 0.1829,
+      "teams": [
+        "Czechia",
+        "Mexico",
+        "South Africa",
+        "South Korea"
+      ]
+    },
+    "B": {
+      "first": "Switzerland",
+      "p_first": 0.4304,
+      "second": "Canada",
+      "p_second": 0.3384,
+      "third_qualifier": "Qatar",
+      "p_third_qualifies": 0.2175,
+      "teams": [
+        "Bosnia and Herzegovina",
+        "Canada",
+        "Qatar",
+        "Switzerland"
+      ]
+    },
+    "C": {
+      "first": "Morocco",
+      "p_first": 0.4301,
+      "second": "Brazil",
+      "p_second": 0.3207,
+      "third_qualifier": "Scotland",
+      "p_third_qualifies": 0.2003,
+      "teams": [
+        "Brazil",
+        "Haiti",
+        "Morocco",
+        "Scotland"
+      ]
+    },
+    "D": {
+      "first": "Australia",
+      "p_first": 0.4174,
+      "second": "USA",
+      "p_second": 0.2762,
+      "third_qualifier": "Turkey",
+      "p_third_qualifies": 0.1851,
+      "teams": [
+        "Australia",
+        "Paraguay",
+        "Turkey",
+        "USA"
+      ]
+    },
+    "E": {
+      "first": "Germany",
+      "p_first": 0.4683,
+      "second": "Ivory Coast",
+      "p_second": 0.317,
+      "third_qualifier": "Ecuador",
+      "p_third_qualifies": 0.2159,
+      "teams": [
+        "Curacao",
+        "Ecuador",
+        "Germany",
+        "Ivory Coast"
+      ]
+    },
+    "F": {
+      "first": "Japan",
+      "p_first": 0.511,
+      "second": "Netherlands",
+      "p_second": 0.3304,
+      "third_qualifier": "Tunisia",
+      "p_third_qualifies": 0.2299,
+      "teams": [
+        "Japan",
+        "Netherlands",
+        "Sweden",
+        "Tunisia"
+      ]
+    },
+    "G": {
+      "first": "New Zealand",
+      "p_first": 0.2812,
+      "second": "Iran",
+      "p_second": 0.2528,
+      "third_qualifier": "Egypt",
+      "p_third_qualifies": 0.1812,
+      "teams": [
+        "Belgium",
+        "Egypt",
+        "Iran",
+        "New Zealand"
+      ]
+    },
+    "H": {
+      "first": "Spain",
+      "p_first": 0.5973,
+      "second": "Uruguay",
+      "p_second": 0.33,
+      "third_qualifier": "Saudi Arabia",
+      "p_third_qualifies": 0.1834,
+      "teams": [
+        "Cape Verde",
+        "Saudi Arabia",
+        "Spain",
+        "Uruguay"
+      ]
+    },
+    "I": {
+      "first": "France",
+      "p_first": 0.3634,
+      "second": "Senegal",
+      "p_second": 0.2881,
+      "third_qualifier": "Norway",
+      "p_third_qualifies": 0.1847,
+      "teams": [
+        "France",
+        "Iraq",
+        "Norway",
+        "Senegal"
+      ]
+    },
+    "J": {
+      "first": "Argentina",
+      "p_first": 0.4373,
+      "second": "Algeria",
+      "p_second": 0.2794,
+      "third_qualifier": "Austria",
+      "p_third_qualifies": 0.1868,
+      "teams": [
+        "Algeria",
+        "Argentina",
+        "Austria",
+        "Jordan"
+      ]
+    },
+    "K": {
+      "first": "Portugal",
+      "p_first": 0.3986,
+      "second": "Colombia",
+      "p_second": 0.2709,
+      "third_qualifier": "Uzbekistan",
+      "p_third_qualifies": 0.1814,
+      "teams": [
+        "Colombia",
+        "DR Congo",
+        "Portugal",
+        "Uzbekistan"
+      ]
+    },
+    "L": {
+      "first": "England",
+      "p_first": 0.4972,
+      "second": "Croatia",
+      "p_second": 0.3103,
+      "third_qualifier": "Panama",
+      "p_third_qualifies": 0.1937,
+      "teams": [
+        "Croatia",
+        "England",
+        "Ghana",
+        "Panama"
+      ]
+    }
+  },
+  "stage_probs": {
+    "Spain": {
+      "p_reach_qf": 0.5982,
+      "p_reach_sf": 0.4057,
+      "p_reach_final": 0.1603,
+      "model_win_pct": 0.0943
+    },
+    "Japan": {
+      "p_reach_qf": 0.5778,
+      "p_reach_sf": 0.3744,
+      "p_reach_final": 0.1416,
+      "model_win_pct": 0.0855
+    },
+    "Morocco": {
+      "p_reach_qf": 0.7739,
+      "p_reach_sf": 0.4421,
+      "p_reach_final": 0.134,
+      "model_win_pct": 0.0683
+    },
+    "Argentina": {
+      "p_reach_qf": 0.5308,
+      "p_reach_sf": 0.3217,
+      "p_reach_final": 0.1159,
+      "model_win_pct": 0.068
+    },
+    "England": {
+      "p_reach_qf": 0.5508,
+      "p_reach_sf": 0.3298,
+      "p_reach_final": 0.1057,
+      "model_win_pct": 0.0583
+    },
+    "Brazil": {
+      "p_reach_qf": 0.6739,
+      "p_reach_sf": 0.3769,
+      "p_reach_final": 0.1042,
+      "model_win_pct": 0.0549
+    },
+    "France": {
+      "p_reach_qf": 0.5367,
+      "p_reach_sf": 0.2957,
+      "p_reach_final": 0.0886,
+      "model_win_pct": 0.0459
+    },
+    "Portugal": {
+      "p_reach_qf": 0.5102,
+      "p_reach_sf": 0.28,
+      "p_reach_final": 0.0828,
+      "model_win_pct": 0.0445
+    },
+    "Germany": {
+      "p_reach_qf": 0.8219,
+      "p_reach_sf": 0.2801,
+      "p_reach_final": 0.0799,
+      "model_win_pct": 0.0402
+    },
+    "Norway": {
+      "p_reach_qf": 0.5239,
+      "p_reach_sf": 0.2719,
+      "p_reach_final": 0.0679,
+      "model_win_pct": 0.0338
+    },
+    "Colombia": {
+      "p_reach_qf": 0.4486,
+      "p_reach_sf": 0.2208,
+      "p_reach_final": 0.0621,
+      "model_win_pct": 0.0311
+    },
+    "South Korea": {
+      "p_reach_qf": 0.5064,
+      "p_reach_sf": 0.2535,
+      "p_reach_final": 0.0615,
+      "model_win_pct": 0.0284
+    },
+    "Senegal": {
+      "p_reach_qf": 0.3688,
+      "p_reach_sf": 0.1887,
+      "p_reach_final": 0.0531,
+      "model_win_pct": 0.0283
+    },
+    "Australia": {
+      "p_reach_qf": 0.5137,
+      "p_reach_sf": 0.1984,
+      "p_reach_final": 0.0508,
+      "model_win_pct": 0.0267
+    },
+    "Algeria": {
+      "p_reach_qf": 0.3815,
+      "p_reach_sf": 0.2005,
+      "p_reach_final": 0.0484,
+      "model_win_pct": 0.0246
+    },
+    "Croatia": {
+      "p_reach_qf": 0.409,
+      "p_reach_sf": 0.2039,
+      "p_reach_final": 0.0489,
+      "model_win_pct": 0.0216
+    },
+    "Netherlands": {
+      "p_reach_qf": 0.4107,
+      "p_reach_sf": 0.2119,
+      "p_reach_final": 0.0495,
+      "model_win_pct": 0.0213
+    },
+    "Mexico": {
+      "p_reach_qf": 0.4448,
+      "p_reach_sf": 0.205,
+      "p_reach_final": 0.045,
+      "model_win_pct": 0.0206
+    },
+    "Switzerland": {
+      "p_reach_qf": 0.4747,
+      "p_reach_sf": 0.1967,
+      "p_reach_final": 0.0399,
+      "model_win_pct": 0.0166
+    },
+    "Uruguay": {
+      "p_reach_qf": 0.3592,
+      "p_reach_sf": 0.1703,
+      "p_reach_final": 0.0361,
+      "model_win_pct": 0.0159
+    },
+    "Canada": {
+      "p_reach_qf": 0.4621,
+      "p_reach_sf": 0.1864,
+      "p_reach_final": 0.037,
+      "model_win_pct": 0.0151
+    },
+    "New Zealand": {
+      "p_reach_qf": 0.4187,
+      "p_reach_sf": 0.137,
+      "p_reach_final": 0.0307,
+      "model_win_pct": 0.0138
+    },
+    "Ivory Coast": {
+      "p_reach_qf": 0.5202,
+      "p_reach_sf": 0.1663,
+      "p_reach_final": 0.0325,
+      "model_win_pct": 0.0127
+    },
+    "Iran": {
+      "p_reach_qf": 0.4175,
+      "p_reach_sf": 0.132,
+      "p_reach_final": 0.0297,
+      "model_win_pct": 0.0126
+    },
+    "Belgium": {
+      "p_reach_qf": 0.3903,
+      "p_reach_sf": 0.1181,
+      "p_reach_final": 0.0253,
+      "model_win_pct": 0.0117
+    },
+    "Tunisia": {
+      "p_reach_qf": 0.3209,
+      "p_reach_sf": 0.1396,
+      "p_reach_final": 0.0264,
+      "model_win_pct": 0.0114
+    },
+    "Ecuador": {
+      "p_reach_qf": 0.4417,
+      "p_reach_sf": 0.1389,
+      "p_reach_final": 0.0241,
+      "model_win_pct": 0.0103
+    },
+    "USA": {
+      "p_reach_qf": 0.3887,
+      "p_reach_sf": 0.115,
+      "p_reach_final": 0.0206,
+      "model_win_pct": 0.009
+    },
+    "DR Congo": {
+      "p_reach_qf": 0.292,
+      "p_reach_sf": 0.1206,
+      "p_reach_final": 0.0202,
+      "model_win_pct": 0.0085
+    },
+    "Uzbekistan": {
+      "p_reach_qf": 0.292,
+      "p_reach_sf": 0.1197,
+      "p_reach_final": 0.0205,
+      "model_win_pct": 0.0083
+    },
+    "Egypt": {
+      "p_reach_qf": 0.3428,
+      "p_reach_sf": 0.0973,
+      "p_reach_final": 0.0183,
+      "model_win_pct": 0.0077
+    },
+    "Jordan": {
+      "p_reach_qf": 0.2552,
+      "p_reach_sf": 0.1115,
+      "p_reach_final": 0.0183,
+      "model_win_pct": 0.0076
+    },
+    "Panama": {
+      "p_reach_qf": 0.2793,
+      "p_reach_sf": 0.1115,
+      "p_reach_final": 0.0201,
+      "model_win_pct": 0.0075
+    },
+    "Austria": {
+      "p_reach_qf": 0.2602,
+      "p_reach_sf": 0.1051,
+      "p_reach_final": 0.0159,
+      "model_win_pct": 0.0067
+    },
+    "Scotland": {
+      "p_reach_qf": 0.2546,
+      "p_reach_sf": 0.1,
+      "p_reach_final": 0.0136,
+      "model_win_pct": 0.0056
+    },
+    "South Africa": {
+      "p_reach_qf": 0.2562,
+      "p_reach_sf": 0.092,
+      "p_reach_final": 0.0119,
+      "model_win_pct": 0.0037
+    },
+    "Haiti": {
+      "p_reach_qf": 0.2647,
+      "p_reach_sf": 0.1011,
+      "p_reach_final": 0.0132,
+      "model_win_pct": 0.0035
+    },
+    "Saudi Arabia": {
+      "p_reach_qf": 0.2227,
+      "p_reach_sf": 0.0849,
+      "p_reach_final": 0.0091,
+      "model_win_pct": 0.0034
+    },
+    "Czechia": {
+      "p_reach_qf": 0.2382,
+      "p_reach_sf": 0.0769,
+      "p_reach_final": 0.0088,
+      "model_win_pct": 0.0033
+    },
+    "Ghana": {
+      "p_reach_qf": 0.1889,
+      "p_reach_sf": 0.0623,
+      "p_reach_final": 0.0068,
+      "model_win_pct": 0.0025
+    },
+    "Paraguay": {
+      "p_reach_qf": 0.2512,
+      "p_reach_sf": 0.0573,
+      "p_reach_final": 0.0064,
+      "model_win_pct": 0.0021
+    },
+    "Sweden": {
+      "p_reach_qf": 0.1295,
+      "p_reach_sf": 0.0416,
+      "p_reach_final": 0.0044,
+      "model_win_pct": 0.0013
+    },
+    "Qatar": {
+      "p_reach_qf": 0.192,
+      "p_reach_sf": 0.0497,
+      "p_reach_final": 0.0037,
+      "model_win_pct": 0.0013
+    },
+    "Cape Verde": {
+      "p_reach_qf": 0.1577,
+      "p_reach_sf": 0.049,
+      "p_reach_final": 0.0035,
+      "model_win_pct": 0.0008
+    },
+    "Bosnia and Herzegovina": {
+      "p_reach_qf": 0.0981,
+      "p_reach_sf": 0.0186,
+      "p_reach_final": 0.0006,
+      "model_win_pct": 0.0001
+    },
+    "Curacao": {
+      "p_reach_qf": 0.0498,
+      "p_reach_sf": 0.0061,
+      "p_reach_final": 0.0002,
+      "model_win_pct": 0.0
+    },
+    "Iraq": {
+      "p_reach_qf": 0.0,
+      "p_reach_sf": 0.0,
+      "p_reach_final": 0.0,
+      "model_win_pct": 0.0
+    },
+    "Turkey": {
+      "p_reach_qf": 0.0,
+      "p_reach_sf": 0.0,
+      "p_reach_final": 0.0,
+      "model_win_pct": 0.0
+    }
+  }
+}

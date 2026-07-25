@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FIFA World Cup 2026 — Tournament Forecast Report</title>
+  <style>
+    :root {
+      --ink: #1a1a2e;
+      --muted: #4a5568;
+      --accent: #0f4c5c;
+      --gold: #bc6c25;
+      --bg: #faf9f7;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      margin: 0;
+      line-height: 1.5;
+    }
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 40px;
+      background: var(--card);
+      min-height: 100vh;
+    }
+    @media print {
+      body { background: white; }
+      .page { padding: 24px; max-width: 100%; }
+      .no-print { display: none; }
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 8px;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+    .subtitle { color: var(--muted); font-size: 1rem; margin-bottom: 32px; }
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 6px;
+      margin: 36px 0 16px;
+    }
+    .exec-box {
+      background: #f0f7f9;
+      border-left: 4px solid var(--accent);
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 0.95rem;
+    }
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .kpi {
+      border: 1px solid var(--border);
+      padding: 16px;
+      text-align: center;
+    }
+    .kpi .val { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+    .kpi .lbl { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; }
+    .flag-groups {
+      margin: 20px 0;
+    }
+    .flag-group {
+      margin-bottom: 18px;
+    }
+    .flag-group-title {
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin: 0 0 8px;
+      letter-spacing: 0.04em;
+    }
+    .flags {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(88px, 1fr));
+      gap: 12px;
+    }
+    .flag-cell {
+      text-align: center;
+      font-size: 0.65rem;
+      color: var(--muted);
+    }
+    .flag-rank {
+      display: block;
+      font-size: 0.58rem;
+      font-weight: 600;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .flag-cell img {
+      width: 48px;
+      height: 32px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      display: block;
+      margin: 0 auto 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin: 12px 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 8px 10px;
+      text-align: left;
+    }
+    th { background: #edf2f7; font-weight: 600; }
+    tr:nth-child(even) { background: #f8fafc; }
+    .footnote {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    ul { margin: 8px 0; padding-left: 20px; }
+    li { margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <p class="no-print" style="background:#fff3cd;padding:10px;font-size:0.85rem;">
+      Open in Chrome/Edge → <strong>Ctrl+P</strong> → Save as PDF for portfolio or sharing.
+      To paste into PowerPoint: Insert → Pictures → this PDF, or copy sections manually.
+    </p>
+
+    <h1>FIFA World Cup 2026 Predictor</h1>
+    <p class="subtitle">Tournament forecast report · Academic analytics project · Generated 2026-06-14</p>
+
+    <div class="exec-box">
+      <strong>Summary.</strong> A walk-forward Poisson/Dixon-Coles model estimates international
+      A-team goal rates from a five-year rolling window of match history (recent matches
+      upweighted; club football excluded). Match-level probabilities are validated on held-out
+      2018 and 2022 World Cup finals (Brier score). Because the 2026 format links group
+      standings to a 32-team knockout bracket — including best-third-place slot assignment —
+      tournament-stage outcomes are estimated with Monte Carlo simulation (10,000 runs).
+      This report presents iteration&nbsp;8 forecasts against the FIFA official
+      48-team schedule; external win-probability benchmarks appear later for comparison only.
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi">
+        <div class="val">48</div>
+        <div class="lbl">Teams (2026 schedule)</div>
+      </div>
+      <div class="kpi">
+        <div class="val">0.736</div>
+        <div class="lbl">Best 2018 Brier (iter 8)</div>
+      </div>
+      <div class="kpi">
+        <div class="val">0.722</div>
+        <div class="lbl">Best 2022 Brier (iter 8)</div>
+      </div>
+    </div>
+
+    <h2>Participating nations — model prediction order</h2>
+    <p style="font-size:0.9rem;color:var(--muted);">
+      48 teams arranged by group (A–L), in model pick order: 1st, 2nd, Best 3rd, then 4th.
+      Flags via <a href="https://flagcdn.com">flagcdn.com</a> — not official FIFA branding.
+    </p>
+    <div class="flag-groups">
+      <div class="flag-group"><h3 class="flag-group-title">Group A</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/kr.png" alt="South Korea flag" loading="lazy" /><span class="flag-rank">1st</span><span>South Korea</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/mx.png" alt="Mexico flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Mexico</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/cz.png" alt="Czechia flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Czechia</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/za.png" alt="South Africa flag" loading="lazy" /><span class="flag-rank">4th</span><span>South Africa</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group B</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/ch.png" alt="Switzerland flag" loading="lazy" /><span class="flag-rank">1st</span><span>Switzerland</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/ca.png" alt="Canada flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Canada</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/qa.png" alt="Qatar flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Qatar</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/ba.png" alt="Bosnia and Herzegovina flag" loading="lazy" /><span class="flag-rank">4th</span><span>Bosnia and Herzegovina</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group C</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/ma.png" alt="Morocco flag" loading="lazy" /><span class="flag-rank">1st</span><span>Morocco</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/br.png" alt="Brazil flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Brazil</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/gb-sct.png" alt="Scotland flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Scotland</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/ht.png" alt="Haiti flag" loading="lazy" /><span class="flag-rank">4th</span><span>Haiti</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group D</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/au.png" alt="Australia flag" loading="lazy" /><span class="flag-rank">1st</span><span>Australia</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/us.png" alt="USA flag" loading="lazy" /><span class="flag-rank">2nd</span><span>USA</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/tr.png" alt="Turkey flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Turkey</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/py.png" alt="Paraguay flag" loading="lazy" /><span class="flag-rank">4th</span><span>Paraguay</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group E</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/de.png" alt="Germany flag" loading="lazy" /><span class="flag-rank">1st</span><span>Germany</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/ci.png" alt="Ivory Coast flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Ivory Coast</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/ec.png" alt="Ecuador flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Ecuador</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/cw.png" alt="Curacao flag" loading="lazy" /><span class="flag-rank">4th</span><span>Curacao</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group F</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/jp.png" alt="Japan flag" loading="lazy" /><span class="flag-rank">1st</span><span>Japan</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/nl.png" alt="Netherlands flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Netherlands</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/tn.png" alt="Tunisia flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Tunisia</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/se.png" alt="Sweden flag" loading="lazy" /><span class="flag-rank">4th</span><span>Sweden</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group G</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/nz.png" alt="New Zealand flag" loading="lazy" /><span class="flag-rank">1st</span><span>New Zealand</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/ir.png" alt="Iran flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Iran</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/eg.png" alt="Egypt flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Egypt</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/be.png" alt="Belgium flag" loading="lazy" /><span class="flag-rank">4th</span><span>Belgium</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group H</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/es.png" alt="Spain flag" loading="lazy" /><span class="flag-rank">1st</span><span>Spain</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/uy.png" alt="Uruguay flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Uruguay</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/sa.png" alt="Saudi Arabia flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Saudi Arabia</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/cv.png" alt="Cape Verde flag" loading="lazy" /><span class="flag-rank">4th</span><span>Cape Verde</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group I</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/fr.png" alt="France flag" loading="lazy" /><span class="flag-rank">1st</span><span>France</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/sn.png" alt="Senegal flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Senegal</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/no.png" alt="Norway flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Norway</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/iq.png" alt="Iraq flag" loading="lazy" /><span class="flag-rank">4th</span><span>Iraq</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group J</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/ar.png" alt="Argentina flag" loading="lazy" /><span class="flag-rank">1st</span><span>Argentina</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/dz.png" alt="Algeria flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Algeria</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/at.png" alt="Austria flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Austria</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/jo.png" alt="Jordan flag" loading="lazy" /><span class="flag-rank">4th</span><span>Jordan</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group K</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/pt.png" alt="Portugal flag" loading="lazy" /><span class="flag-rank">1st</span><span>Portugal</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/co.png" alt="Colombia flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Colombia</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/uz.png" alt="Uzbekistan flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Uzbekistan</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/cd.png" alt="DR Congo flag" loading="lazy" /><span class="flag-rank">4th</span><span>DR Congo</span></div></div></div>
+<div class="flag-group"><h3 class="flag-group-title">Group L</h3><div class="flags"><div class="flag-cell"><img src="https://flagcdn.com/w80/gb-eng.png" alt="England flag" loading="lazy" /><span class="flag-rank">1st</span><span>England</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/hr.png" alt="Croatia flag" loading="lazy" /><span class="flag-rank">2nd</span><span>Croatia</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/pa.png" alt="Panama flag" loading="lazy" /><span class="flag-rank">Best 3rd</span><span>Panama</span></div><div class="flag-cell"><img src="https://flagcdn.com/w80/gh.png" alt="Ghana flag" loading="lazy" /><span class="flag-rank">4th</span><span>Ghana</span></div></div></div>
+    </div>
+
+    <h2>Methodology</h2>
+    <ul>
+      <li><strong>Training data:</strong> Kaggle martj42 international A-team results; five-year window before each cutoff; 2-year half-life decay.</li>
+      <li><strong>Fixtures:</strong> FIFA.com official 2026 schedule (local CSV), with playoff slots resolved from UEFA/FIFA results.</li>
+      <li><strong>Model:</strong> Log-linear Poisson goals with tier weights, Elo anchor, Dixon-Coles τ, opponent difficulty, and competition-context weights (iterations 3–7); optional squad-value prior blend (iteration 8 prototype).</li>
+      <li><strong>Validation:</strong> Walk-forward — tune on 2018 World Cup, confirm on 2022; 64 finals matches held out per year.</li>
+      <li><strong>DataCamp:</strong> competition submission format only (match_id, schema) — not used as fixture authority.</li>
+    </ul>
+
+    <h2>Why Monte Carlo simulation?</h2>
+    <p style="font-size:0.92rem;">
+      Dixon-Coles Poisson yields <strong>match-level</strong> score probabilities, not tournament-stage
+      outcomes directly. The 2026 format adds twelve groups, eight best-third-place qualifiers mapped
+      to fixed knockout slots, and bracket dependencies that have no closed-form winner probability.
+      We simulate many independent tournaments (10,000), sample scores from the model, apply FIFA
+      tiebreak rules, and aggregate P(win), P(reach each stage), and group-advancement rates.
+    </p>
+
+    <h2>Brier score &amp; Dixon-Coles</h2>
+    <p style="font-size:0.92rem;">
+      <strong>Brier score.</strong> For each World Cup match we predict three probabilities
+      (home win, draw, away win). The Brier score is the mean squared error between those
+      probabilities and the actual result (expressed as a one-hot vector). Lower is better:
+      0 is perfect; about <strong>0.67</strong> is the benchmark from naively guessing one-third
+      for every outcome. We average over all 64 held-out tournament matches to compare
+      iterations and years. Iteration choice for development uses the lowest 2018 Brier;
+      2022 is reported as confirmation without re-tuning.
+    </p>
+    <p style="font-size:0.92rem;">
+      <strong>Dixon-Coles.</strong> Classical Poisson models assume home and away goals are
+      independent; real football shows extra correlation on low scores (0–0, 1–0, 0–1, 1–1),
+      especially draws. Dixon and Coles (1997) multiply independent Poisson probabilities by
+      a correction factor τ (rho, ρ) on those scorelines. Our pipeline learns team attack and
+      defense rates via Poisson negative log-likelihood (iterations 1–4); <strong>iteration 5</strong>
+      adds the τ term in training and when converting goal rates to win/draw/loss probabilities.
+      World Cup match scoring uses neutral venues (no home advantage). Elo anchoring (iter 4+)
+      shrinks team strengths toward a stable rating so single shock results do not dominate.
+    </p>
+
+    <h2>Backtest — Brier score (lower is better)</h2>
+    <table>
+      <thead>
+        <tr><th>Year</th><th>Iter</th><th>Brier</th><th>Model favourite</th><th>Win %</th><th>Actual winner</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2018</td><td>1</td><td>1.2031</td><td>Costa Rica</td><td>25.3%</td><td>France</td></tr>
+<tr><td>2018</td><td>2</td><td>0.7858</td><td>Brazil</td><td>17.1%</td><td>France</td></tr>
+<tr><td>2018</td><td>3</td><td>0.7594</td><td>Brazil</td><td>18.4%</td><td>France</td></tr>
+<tr><td>2018</td><td>4</td><td>0.7424</td><td>Brazil</td><td>16.9%</td><td>France</td></tr>
+<tr><td>2018</td><td>5</td><td>0.7465</td><td>Brazil</td><td>16.5%</td><td>France</td></tr>
+<tr><td>2018</td><td>6</td><td>0.7474</td><td>Brazil</td><td>17.9%</td><td>France</td></tr>
+<tr><td>2018</td><td>7</td><td>0.7387</td><td>Brazil</td><td>15.6%</td><td>France</td></tr>
+<tr><td>2018</td><td>8</td><td>0.7360</td><td>Brazil</td><td>15.0%</td><td>France</td></tr>
+<tr><td>2022</td><td>1</td><td>1.0913</td><td>Portugal</td><td>14.1%</td><td>Argentina</td></tr>
+<tr><td>2022</td><td>2</td><td>0.7737</td><td>Brazil</td><td>13.0%</td><td>Argentina</td></tr>
+<tr><td>2022</td><td>3</td><td>0.7638</td><td>Brazil</td><td>21.3%</td><td>Argentina</td></tr>
+<tr><td>2022</td><td>4</td><td>0.7363</td><td>Brazil</td><td>13.1%</td><td>Argentina</td></tr>
+<tr><td>2022</td><td>5</td><td>0.7362</td><td>Brazil</td><td>12.5%</td><td>Argentina</td></tr>
+<tr><td>2022</td><td>6</td><td>0.7347</td><td>Brazil</td><td>13.0%</td><td>Argentina</td></tr>
+<tr><td>2022</td><td>7</td><td>0.7262</td><td>Canada</td><td>11.7%</td><td>Argentina</td></tr>
+<tr><td>2022</td><td>8</td><td>0.7221</td><td>Canada</td><td>12.6%</td><td>Argentina</td></tr>
+      </tbody>
+    </table>
+
+    <h2>External benchmark — OPTA pre-tournament win % (iteration 8)</h2>
+    <p style="font-size:0.88rem;color:var(--muted);margin:0 0 8px;">
+      Post-hoc comparison only; OPTA probabilities are not training inputs.
+    </p>
+    <table>
+      <thead>
+        <tr><th>OPTA rank</th><th>Team</th><th>OPTA win %</th><th>Model win %</th><th>Delta</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td><strong>Spain</strong></td><td>16.1%</td><td>9.4%</td><td>-6.7pp</td></tr>
+<tr><td>23</td><td><strong>Japan</strong></td><td>0.8%</td><td>8.6%</td><td>+7.8pp</td></tr>
+<tr><td>20</td><td><strong>Morocco</strong></td><td>0.9%</td><td>6.8%</td><td>+5.9pp</td></tr>
+<tr><td>4</td><td><strong>Argentina</strong></td><td>10.4%</td><td>6.8%</td><td>-3.6pp</td></tr>
+<tr><td>3</td><td><strong>England</strong></td><td>11.2%</td><td>5.8%</td><td>-5.3pp</td></tr>
+<tr><td>6</td><td><strong>Brazil</strong></td><td>6.6%</td><td>5.5%</td><td>-1.1pp</td></tr>
+<tr><td>2</td><td><strong>France</strong></td><td>13.0%</td><td>4.6%</td><td>-8.4pp</td></tr>
+<tr><td>5</td><td><strong>Portugal</strong></td><td>7.0%</td><td>4.5%</td><td>-2.6pp</td></tr>
+<tr><td>7</td><td><strong>Germany</strong></td><td>5.1%</td><td>4.0%</td><td>-1.1pp</td></tr>
+<tr><td>9</td><td><strong>Norway</strong></td><td>3.5%</td><td>3.4%</td><td>-0.1pp</td></tr>
+<tr><td>13</td><td><strong>Colombia</strong></td><td>1.7%</td><td>3.1%</td><td>+1.4pp</td></tr>
+<tr><td>28</td><td><strong>South Korea</strong></td><td>0.5%</td><td>2.8%</td><td>+2.3pp</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Group-stage outlook (12 groups → round of 32)</h2>
+    <p style="font-size:0.9rem;color:var(--muted);">
+      Model picks for group winner, runner-up, and best third-place qualifier candidate.
+      48-team format: 24 auto-qualifiers + 8 best third-place teams.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Group</th><th>1st</th><th>2nd</th><th>Best 3rd</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>A</strong></td><td>South Korea</td><td>Mexico</td><td>Czechia</td></tr>
+<tr><td><strong>B</strong></td><td>Switzerland</td><td>Canada</td><td>Qatar</td></tr>
+<tr><td><strong>C</strong></td><td>Morocco</td><td>Brazil</td><td>Scotland</td></tr>
+<tr><td><strong>D</strong></td><td>Australia</td><td>USA</td><td>Turkey</td></tr>
+<tr><td><strong>E</strong></td><td>Germany</td><td>Ivory Coast</td><td>Ecuador</td></tr>
+<tr><td><strong>F</strong></td><td>Japan</td><td>Netherlands</td><td>Tunisia</td></tr>
+<tr><td><strong>G</strong></td><td>New Zealand</td><td>Iran</td><td>Egypt</td></tr>
+<tr><td><strong>H</strong></td><td>Spain</td><td>Uruguay</td><td>Saudi Arabia</td></tr>
+<tr><td><strong>I</strong></td><td>France</td><td>Senegal</td><td>Norway</td></tr>
+<tr><td><strong>J</strong></td><td>Argentina</td><td>Algeria</td><td>Austria</td></tr>
+<tr><td><strong>K</strong></td><td>Portugal</td><td>Colombia</td><td>Uzbekistan</td></tr>
+<tr><td><strong>L</strong></td><td>England</td><td>Croatia</td><td>Panama</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Knockout reach probabilities</h2>
+    <p style="font-size:0.9rem;color:var(--muted);">
+      Monte Carlo estimates of advancing through each knockout round (iteration 8).
+    </p>
+    <table>
+      <thead>
+        <tr><th>Team</th><th>P(QF)</th><th>P(SF)</th><th>P(Final)</th><th>P(Win)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Spain</strong></td><td>59.8%</td><td>40.6%</td><td>16.0%</td><td>9.4%</td></tr>
+<tr><td><strong>Japan</strong></td><td>57.8%</td><td>37.4%</td><td>14.2%</td><td>8.6%</td></tr>
+<tr><td><strong>Morocco</strong></td><td>77.4%</td><td>44.2%</td><td>13.4%</td><td>6.8%</td></tr>
+<tr><td><strong>Argentina</strong></td><td>53.1%</td><td>32.2%</td><td>11.6%</td><td>6.8%</td></tr>
+<tr><td><strong>England</strong></td><td>55.1%</td><td>33.0%</td><td>10.6%</td><td>5.8%</td></tr>
+<tr><td><strong>Brazil</strong></td><td>67.4%</td><td>37.7%</td><td>10.4%</td><td>5.5%</td></tr>
+<tr><td><strong>France</strong></td><td>53.7%</td><td>29.6%</td><td>8.9%</td><td>4.6%</td></tr>
+<tr><td><strong>Portugal</strong></td><td>51.0%</td><td>28.0%</td><td>8.3%</td><td>4.5%</td></tr>
+<tr><td><strong>Germany</strong></td><td>82.2%</td><td>28.0%</td><td>8.0%</td><td>4.0%</td></tr>
+<tr><td><strong>Norway</strong></td><td>52.4%</td><td>27.2%</td><td>6.8%</td><td>3.4%</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Key findings &amp; limitations</h2>
+    <ul>
+      <li>Elo anchoring (iter 4+) limits overreaction to isolated shock results in training.</li>
+      <li>Dixon-Coles τ (iter 5+) improves low-score and draw calibration on held-out World Cup matches.</li>
+      <li>Iteration 8 adds Transfermarkt squad-value priors; modest Brier improvement on 2018/2022 — retained for sensitivity analysis.</li>
+      <li>No xG or injury data; neutral venues at World Cup inference; live updates require re-running with a new cutoff.</li>
+    </ul>
+
+    <p class="footnote">
+      Independent research project by <span style="font-size:0.85em">Chandra Sekhar</span>. Not affiliated with FIFA, OPTA, or any cohort program.
+      Do not use FIFA copyrighted logos without permission. Team flags from flagcdn.com.
+      Project: fifa_2026_predictor · Outputs: outputs/ · Refresh: python generate_executive_report.py
+    </p>
+  </div>
+</body>
+</html>

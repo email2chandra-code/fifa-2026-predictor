@@ -1,0 +1,93 @@
+FIFA 2026 Predictor — Snapshot Notes
+====================================
+Project type: Independent ML forecasting initiative (author-owned)
+Milestone: iter 5 production + group predictions + knockout stage probs
+           + Japan attack sensitivity — pre cheat-sheet web UI
+Date: 2026-06-09
+
+WHAT THIS PROJECT DOES
+----------------------
+Walk-forward Poisson/Dixon-Coles model:
+  - Tune on 2018 (development)
+  - Confirm on 2022 (confirmation)
+  - Forecast 2026 (production)
+Best iteration for 2018 Brier tuning: iter 4
+Production / 2026 forecast iteration: iter 5 (Dixon-Coles tau + Elo anchor)
+
+ENVIRONMENTS
+------------
+Presentation (view only):  conda activate base
+Training / simulation:     conda activate deeplearning
+  (numpy pinned 1.26.4 in deeplearning — see fix_deeplearning_env.ps1)
+
+KEY COMMANDS
+------------
+Full backtest (2018 + 2022, all iterations):
+  python run_backtest.py
+
+2026 production (train + win probs):
+  python run_production.py --iteration 5
+
+Group-stage predictions (no retrain):
+  python run_group_predictions.py --iteration 5 --simulations 10000
+
+Knockout stage reach probs QF / SF / Final / Win (no retrain):
+  python run_stage_probabilities.py --iteration 5 --simulations 10000
+
+Executive HTML report:
+  python generate_executive_report.py
+
+KEY OUTPUTS (outputs/)
+------------------------
+metrics_2026_iter5.csv              Team attack/defense + Elo
+win_probs_2026_iter5.csv            Tournament win %
+tournament_stage_probs_2026_iter5.csv  P(reach QF/SF/Final/Win)
+group_prediction_sheet_2026_iter5.csv  Per-group 1st/2nd/best 3rd
+group_predictions_2026_iter5.csv    Full group-stage probabilities
+knockout_qualifiers_2026_iter5.csv  Top 32 by P(advance)
+japan_attack_sensitivity_2026_iter5.csv  Cap sensitivity study
+backtest_summary_all.csv            Brier scores all iterations
+Executive_Report.html               Presentation report (project root)
+
+DOCUMENTATION
+-------------
+README.md — project overview and quick start
+BASELINE_README.md — full operational guide (setup, troubleshooting, wrappers)
+presentation.ipynb — project walk-through (SKIP_TRAINING=True for load-only)
+
+MODEL NOTES (iter 5)
+--------------------
+Training window: 5 years before cutoff, date < target_date
+2026 cutoff: 2026-06-11
+Home advantage: learned in training; zeroed in WC simulation (neutral=True)
+No travel/timezone modeling
+
+KNOWN MODEL BEHAVIORS
+---------------------
+- Japan attack rating (~0.87) is high vs OPTA; Asian WCQ + Kirin Cup at full tier weight
+- Croatia underrated vs 2018/2018 runs — knockout grit not in Poisson features
+- 12 groups A-L (not 8); 32 knockout teams = 24 auto + 8 best thirds
+
+TO REGENERATE FROM SCRATCH
+--------------------------
+1. conda activate deeplearning
+2. cd to project root
+3. python run_backtest.py
+4. python run_production.py --iteration 5
+5. python run_group_predictions.py --iteration 5
+6. python run_stage_probabilities.py --iteration 5
+7. python generate_executive_report.py
+
+ZIP TIP
+-------
+Exclude before zipping (optional, saves space):
+  .ipynb_checkpoints/
+  __pycache__/
+  src/.ipynb_checkpoints/
+
+Keep: outputs/, saved_models/, src/, data/, general/, notebooks/presentation.ipynb
+
+PENDING (not in this snapshot)
+------------------------------
+- Fillable printable cheat-sheet web app (World_Cup_2026_Prediction_Cheat_Sheet)
+- Iteration 6: opponent/competition difficulty weights (Golden Shoe / FIFA SUM style)

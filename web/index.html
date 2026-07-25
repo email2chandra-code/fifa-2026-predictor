@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA 2026 Predictor</title>
+  <style>
+    :root {
+      --ink: #1a1a2e;
+      --muted: #4a5568;
+      --accent: #0f4c5c;
+      --gold: #bc6c25;
+      --bg: #faf9f7;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 1.5rem;
+    }
+    .shell {
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      margin: 0 0 2rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.45;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.35rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .btn {
+      display: block;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.95rem 1.25rem;
+      border-radius: 8px;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      background: var(--card);
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn:hover { filter: brightness(0.96); }
+    .credit {
+      margin-top: 1.75rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <h1>FIFA World Cup 2026</h1>
+    <p class="tagline">Independent ML forecast · fill your bracket on your phone · read how the model works</p>
+
+    <nav class="links" aria-label="Site links">
+      <a class="btn btn-primary" href="prediction_cheat_sheet.html">Prediction Cheat Sheet</a>
+      <a class="btn" href="for_friends.html">For friends — quick guide</a>
+      <a class="btn" href="Executive_Report.html">Executive Report</a>
+    </nav>
+
+    <p class="credit">Chandra Sekhar · Model iter 7</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+match_number,date,day,time_local,team1,team2,group,host_city,stadium,country
+1,6/11/2026,Thursday,13:00,Mexico,South Africa,A,Mexico City,Estadio Banorte,Mexico
+2,6/11/2026,Thursday,20:00,South Korea,Czechia,A,Guadalajara,Estadio Akron,Mexico
+3,6/12/2026,Friday,15:00,Canada,Bosnia and Herzegovina,B,Toronto,BMO Field,Canada
+4,6/12/2026,Friday,18:00,United States,Paraguay,D,Inglewood,SoFi Stadium,USA
+5,6/13/2026,Saturday,12:00,Qatar,Switzerland,B,Santa Clara,Levi's Stadium,USA
+6,6/13/2026,Saturday,18:00,Brazil,Morocco,C,East Rutherford,MetLife Stadium,USA
+7,6/13/2026,Saturday,21:00,Haiti,Scotland,C,Foxborough,Gillette Stadium,USA
+8,6/12/2026,Friday,21:00,Australia,Turkey,D,Vancouver,BC Place,Canada
+9,6/14/2026,Sunday,12:00,Germany,Curacao,E,Houston,NRG Stadium,USA
+10,6/14/2026,Sunday,15:00,Netherlands,Japan,F,Arlington,AT&T Stadium,USA
+11,6/14/2026,Sunday,19:00,Ivory Coast,Ecuador,E,Philadelphia,Lincoln Financial Field,USA
+12,6/14/2026,Sunday,20:00,Sweden,Tunisia,F,Guadalupe,Estadio BBVA,Mexico
+13,6/15/2026,Monday,12:00,Spain,Cape Verde,H,Atlanta,Mercedes-Benz Stadium,USA
+14,6/15/2026,Monday,12:00,Belgium,Egypt,G,Seattle,Lumen Field,USA
+15,6/15/2026,Monday,18:00,Saudi Arabia,Uruguay,H,Miami Gardens,Hard Rock Stadium,USA
+16,6/15/2026,Monday,18:00,Iran,New Zealand,G,Inglewood,SoFi Stadium,USA
+17,6/16/2026,Tuesday,15:00,France,Senegal,I,East Rutherford,MetLife Stadium,USA
+18,6/16/2026,Tuesday,18:00,Iraq,Norway,I,Foxborough,Gillette Stadium,USA
+19,6/16/2026,Tuesday,20:00,Argentina,Algeria,J,Kansas City,GEHA Field at Arrowhead Stadium,USA
+20,6/15/2026,Monday,21:00,Austria,Jordan,J,Santa Clara,Levi's Stadium,USA
+21,6/17/2026,Wednesday,12:00,Portugal,DR Congo,K,Houston,NRG Stadium,USA
+22,6/17/2026,Wednesday,15:00,England,Croatia,L,Arlington,AT&T Stadium,USA
+23,6/17/2026,Wednesday,19:00,Ghana,Panama,L,Toronto,BMO Field,Canada
+24,6/17/2026,Wednesday,20:00,Uzbekistan,Colombia,K,Mexico City,Estadio Banorte,Mexico
+25,6/18/2026,Thursday,12:00,Czechia,South Africa,A,Atlanta,Mercedes-Benz Stadium,USA
+26,6/18/2026,Thursday,12:00,Switzerland,Bosnia and Herzegovina,B,Inglewood,SoFi Stadium,USA
+27,6/18/2026,Thursday,15:00,Canada,Qatar,B,Vancouver,BC Place,Canada
+28,6/18/2026,Thursday,19:00,Mexico,South Korea,A,Guadalajara,Estadio Akron,Mexico
+29,6/19/2026,Friday,12:00,USA,Australia,D,Seattle,Lumen Field,USA
+30,6/19/2026,Friday,18:00,Scotland,Morocco,C,Foxborough,Gillette Stadium,USA
+31,6/19/2026,Friday,21:00,Brazil,Haiti,C,Philadelphia,Lincoln Financial Field,USA
+32,6/18/2026,Thursday,21:00,Turkey,Paraguay,D,Santa Clara,Levi's Stadium,USA
+33,6/20/2026,Saturday,16:00,Germany,Ivory Coast,E,Toronto,BMO Field,Canada
+34,6/20/2026,Saturday,12:00,Netherlands,Sweden,F,Houston,NRG Stadium,USA
+35,6/20/2026,Saturday,19:00,Ecuador,Curacao,E,Kansas City,GEHA Field at Arrowhead Stadium,USA
+36,6/19/2026,Friday,22:00,Tunisia,Japan,F,Monterrey,Estadio BBVA,Mexico
+37,6/21/2026,Sunday,12:00,Spain,Saudi Arabia,H,Atlanta,Mercedes-Benz Stadium,USA
+38,6/21/2026,Sunday,12:00,Belgium,Iran,G,Inglewood,SoFi Stadium,USA
+39,6/21/2026,Sunday,18:00,Uruguay,Cape Verde,H,Miami Gardens,Hard Rock Stadium,USA
+40,6/21/2026,Sunday,18:00,New Zealand,Egypt,G,Vancouver,BC Place,Canada
+41,6/22/2026,Monday,17:00,France,Iraq,I,Philadelphia,Lincoln Financial Field,USA
+42,6/22/2026,Monday,20:00,Norway,Senegal,I,East Rutherford,MetLife Stadium,USA
+43,6/22/2026,Monday,12:00,Argentina,Austria,J,Arlington,AT&T Stadium,USA
+44,6/22/2026,Monday,20:00,Jordan,Algeria,J,Santa Clara,Levi's Stadium,USA
+45,6/23/2026,Tuesday,12:00,Portugal,Uzbekistan,K,Houston,NRG Stadium,USA
+46,6/23/2026,Tuesday,16:00,England,Ghana,L,Foxborough,Gillette Stadium,USA
+47,6/23/2026,Tuesday,19:00,Panama,Croatia,L,Toronto,BMO Field,Canada
+48,6/23/2026,Tuesday,20:00,Colombia,DR Congo,K,Guadalajara,Estadio Akron,Mexico
+49,6/24/2026,Wednesday,19:00,Czechia,Mexico,A,Mexico City,Estadio Banorte,Mexico
+50,6/24/2026,Wednesday,19:00,South Africa,South Korea,A,Monterrey,Estadio BBVA,Mexico
+51,6/24/2026,Wednesday,12:00,Switzerland,Canada,B,Los Angeles,SoFi Stadium,USA
+52,6/24/2026,Wednesday,12:00,Bosnia and Herzegovina,Qatar,B,Seattle,Lumen Field,USA
+53,6/24/2026,Wednesday,18:00,Scotland,Brazil,C,Miami Gardens,Hard Rock Stadium,USA
+54,6/24/2026,Wednesday,18:00,Morocco,Haiti,C,Atlanta,Mercedes-Benz Stadium,USA
+55,6/25/2026,Thursday,19:00,Turkey,USA,D,Los Angeles,SoFi Stadium,USA
+56,6/25/2026,Thursday,19:00,Paraguay,Australia,D,Santa Clara,Levi's Stadium,USA
+57,6/25/2026,Thursday,16:00,Ecuador,Germany,E,East Rutherford,MetLife Stadium,USA
+58,6/25/2026,Thursday,16:00,Curacao,Ivory Coast,E,Philadelphia,Lincoln Financial Field,USA
+59,6/25/2026,Thursday,18:00,Japan,Sweden,F,Dallas,AT&T Stadium,USA
+60,6/25/2026,Thursday,18:00,Tunisia,Netherlands,F,Kansas City,GEHA Field at Arrowhead Stadium,USA
+61,6/26/2026,Friday,20:00,Egypt,Iran,G,Seattle,Lumen Field,USA
+62,6/26/2026,Friday,20:00,New Zealand,Belgium,G,Vancouver,BC Place,Canada
+63,6/26/2026,Friday,19:00,Cape Verde,Saudi Arabia,H,Houston,NRG Stadium,USA
+64,6/26/2026,Friday,18:00,Uruguay,Spain,H,Guadalajara,Estadio Akron,Mexico
+65,6/27/2026,Saturday,21:00,Algeria,Austria,J,Kansas City,GEHA Field at Arrowhead Stadium,USA
+66,6/27/2026,Saturday,21:00,Jordan,Argentina,J,Dallas,AT&T Stadium,USA
+67,6/27/2026,Saturday,19:30,Colombia,Portugal,K,Miami Gardens,Hard Rock Stadium,USA
+68,6/27/2026,Saturday,19:30,DR Congo,Uzbekistan,K,Atlanta,Mercedes-Benz Stadium,USA
+69,6/27/2026,Saturday,17:00,Panama,England,L,East Rutherford,MetLife Stadium,USA
+70,6/27/2026,Saturday,17:00,Croatia,Ghana,L,Philadelphia,Lincoln Financial Field,USA
+71,6/26/2026,Friday,15:00,Norway,France,I,Foxborough,Gillette Stadium,USA
+72,6/26/2026,Friday,15:00,Senegal,Iraq,I,Toronto,BMO Field,Canada
+73,6/28/2026,Sunday,12:00,Runner-up Group A,Runner-up Group B,R16,Los Angeles,SoFi Stadium,USA
+74,6/29/2026,Monday,12:00,Winner Group C,Runner-up Group F,R16,Houston,NRG Stadium,USA
+75,6/29/2026,Monday,16:30,Winner Group E,Third-place qualifier,R16,Boston,Gillette Stadium,USA
+76,6/29/2026,Monday,19:00,Winner Group F,Runner-up Group C,R16,Monterrey,Estadio BBVA,Mexico
+77,6/30/2026,Tuesday,17:00,Winner Group I,Third-place qualifier,R16,East Rutherford,MetLife Stadium,USA
+78,6/30/2026,Tuesday,12:00,Runner-up Group E,Runner-up Group I,R16,Arlington,AT&T Stadium,USA
+79,6/30/2026,Tuesday,19:00,Winner Group A,Third-place qualifier,R16,Mexico City,Estadio Banorte,Mexico
+80,7/1/2026,Wednesday,12:00,Winner Group L,Third-place qualifier,R16,Atlanta,Mercedes-Benz Stadium,USA
+81,7/1/2026,Wednesday,17:00,Winner Group D,Third-place qualifier,R16,San Francisco Bay,Levi's Stadium,USA
+82,7/1/2026,Wednesday,13:00,Winner Group G,Third-place qualifier,R16,Seattle,Lumen Field,USA
+83,7/2/2026,Thursday,20:00,Winner Group B,Third-place qualifier,R16,Vancouver,BC Place,Canada
+84,7/2/2026,Thursday,16:00,Winner Group H,Runner-up Group J,R16,Los Angeles,SoFi Stadium,USA
+85,7/2/2026,Thursday,15:00,Runner-up Group K,Runner-up Group L,R16,Toronto,BMO Field,Canada
+86,7/3/2026,Friday,18:00,Winner Group J,Runner-up Group H,R16,Miami Gardens,Hard Rock Stadium,USA
+87,7/3/2026,Friday,20:30,Winner Group K,Third-place qualifier,R16,Kansas City,GEHA Field at Arrowhead Stadium,USA
+88,7/3/2026,Friday,13:00,Runner-up Group D,Runner-up Group G,R16,Dallas,AT&T Stadium,USA
+89,7/4/2026,Saturday,13:00,Winner Match 71,Winner Match 74,QF,Boston,Gillette Stadium,USA
+90,7/4/2026,Saturday,16:00,Winner Match 72,Winner Match 76,QF,Houston,NRG Stadium,USA
+91,7/5/2026,Sunday,16:00,Winner Match 73,Winner Match 75,QF,East Rutherford,MetLife Stadium,USA
+92,7/5/2026,Sunday,18:00,Winner Match 77,Winner Match 78,QF,Mexico City,Estadio Banorte,Mexico
+93,7/6/2026,Monday,14:00,Winner Match 81,Winner Match 82,QF,Dallas,AT&T Stadium,USA
+94,7/6/2026,Monday,17:00,Winner Match 79,Winner Match 80,QF,Seattle,Lumen Field,USA
+95,7/7/2026,Tuesday,12:00,Winner Match 84,Winner Match 85,QF,Atlanta,Mercedes-Benz Stadium,USA
+96,7/7/2026,Tuesday,13:00,Winner Match 83,Winner Match 86,QF,Vancouver,BC Place,Canada
+97,7/9/2026,Thursday,16:00,Winner Match 89,Winner Match 90,SF,Boston,Gillette Stadium,USA
+98,7/10/2026,Friday,12:00,Winner Match 91,Winner Match 92,SF,Los Angeles,SoFi Stadium,USA
+99,7/11/2026,Saturday,17:00,Winner Match 93,Winner Match 94,SF,Miami Gardens,Hard Rock Stadium,USA
+100,7/11/2026,Saturday,20:00,Winner Match 95,Winner Match 96,SF,Kansas City,GEHA Field at Arrowhead Stadium,USA
+101,7/14/2026,Tuesday,14:00,Winner Match 97,Winner Match 98,SF,Dallas,AT&T Stadium,USA
+102,7/15/2026,Wednesday,15:00,Winner Match 99,Winner Match 100,SF,Atlanta,Mercedes-Benz Stadium,USA
+103,7/18/2026,Saturday,17:00,Loser Match 101,Loser Match 102,3P,Miami Gardens,Hard Rock Stadium,USA
+104,7/19/2026,Sunday,15:00,Winner Match 101,Winner Match 102,Final,East Rutherford,MetLife Stadium,USA
