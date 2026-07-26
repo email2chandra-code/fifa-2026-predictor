@@ -1,8 +1,8 @@
 from pathlib import Path
 
-BASE = Path(
-    r"C:\Users\sas_c\OneDrive\Documents\2026\AI Engineer\Course\MS AI Machine Learning\fifa_2026_predictor"
-)
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parent.parent
 
 _kaggle_results = (
     BASE
