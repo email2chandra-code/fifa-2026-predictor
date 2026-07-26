@@ -110,8 +110,7 @@ data/former_names.csv
 # Squad market-value scrapes (regenerate via scripts)
 data/squad/*.csv
 
-# DataCamp submission copies (optional local exports)
-datacamp/
+# DataCamp: keep data/datacamp/ and general/datacamp_* in repo for portfolio
 
 # --- Generated artifacts (reproducible from scripts) ---
 # PyTorch checkpoints — regenerate via run_backtest.py / run_production.py

@@ -1,0 +1,33 @@
+match_id,round,multiplier,slot_home,slot_away
+73,Round of 32,1,Runner-up Group A,Runner-up Group B
+74,Round of 32,1,Winner Group C,Runner-up Group F
+75,Round of 32,1,Winner Group E,Third-place qualifier
+76,Round of 32,1,Winner Group F,Runner-up Group C
+77,Round of 32,1,Winner Group I,Third-place qualifier
+78,Round of 32,1,Runner-up Group E,Runner-up Group I
+79,Round of 32,1,Winner Group A,Third-place qualifier
+80,Round of 32,1,Winner Group L,Third-place qualifier
+81,Round of 32,1,Winner Group D,Third-place qualifier
+82,Round of 32,1,Winner Group G,Third-place qualifier
+83,Round of 32,1,Winner Group B,Third-place qualifier
+84,Round of 32,1,Winner Group H,Runner-up Group J
+85,Round of 32,1,Runner-up Group K,Runner-up Group L
+86,Round of 32,1,Winner Group J,Runner-up Group H
+87,Round of 32,1,Winner Group K,Third-place qualifier
+88,Round of 32,1,Runner-up Group D,Runner-up Group G
+89,Quarter-final,4,Winner Match 71,Winner Match 74
+90,Quarter-final,4,Winner Match 72,Winner Match 76
+91,Quarter-final,4,Winner Match 73,Winner Match 75
+92,Quarter-final,4,Winner Match 77,Winner Match 78
+93,Quarter-final,4,Winner Match 81,Winner Match 82
+94,Quarter-final,4,Winner Match 79,Winner Match 80
+95,Quarter-final,4,Winner Match 84,Winner Match 85
+96,Quarter-final,4,Winner Match 83,Winner Match 86
+97,Semi-final,8,Winner Match 89,Winner Match 90
+98,Semi-final,8,Winner Match 91,Winner Match 92
+99,Semi-final,8,Winner Match 93,Winner Match 94
+100,Semi-final,8,Winner Match 95,Winner Match 96
+101,Semi-final,8,Winner Match 97,Winner Match 98
+102,Semi-final,8,Winner Match 99,Winner Match 100
+103,Third-place playoff,8,Loser Match 101,Loser Match 102
+104,Final,16,Winner Match 101,Winner Match 102

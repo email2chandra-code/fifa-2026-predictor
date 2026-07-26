@@ -1,7 +1,5 @@
 from pathlib import Path
 
-from pathlib import Path
-
 BASE = Path(__file__).resolve().parent.parent
 
 _kaggle_results = (

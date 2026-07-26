@@ -6,6 +6,15 @@ Independent machine-learning project that forecasts FIFA World Cup 2026 outcomes
 
 Not affiliated with FIFA or OPTA. Author-owned initiative.
 
+**Two related projects in this repo:**
+
+| Project | Description | Key paths |
+|---------|-------------|-----------|
+| **1. FIFA 2026 Predictor** | Walk-forward Poisson / Dixon-Coles ML pipeline (7 iterations) | `src/`, `run_*.py`, `presentation.ipynb`, `web/` |
+| **2. DataCamp competition** | Professor-encouraged DataCamp *Predict the FIFA World Cup 2026* submission | `general/datacamp_*.ipynb`, `data/datacamp/`, `scripts/build_datacamp_fixtures.py` |
+
+DataCamp deliverables (group + knockout submissions, fixture CSVs, notes) live under `general/` and `data/datacamp/`. Regenerate competition fixtures with `python scripts/build_datacamp_fixtures.py`.
+
 ---
 
 ## Highlights
@@ -94,8 +103,8 @@ fifa_2026_predictor/
 ├── saved_models/           # PyTorch weights
 ├── web/                    # Printable prediction cheat sheet (HTML/CSS/JS)
 ├── scripts/                # UI data export helpers
-├── data/                   # FIFA schedule, OPTA, results, DataCamp submission copies
-└── general/                # Reference data & cheat sheet assets
+├── data/                   # FIFA schedule, OPTA, DataCamp fixture copies (data/datacamp/)
+├── general/                # Reference data, DataCamp notebook & submission outputs
 ```
 
 ---
